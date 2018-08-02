@@ -1,8 +1,8 @@
 uqlab-citations
 ===============
 
-Project to keep track on the citations of [UQLab]_
+Project to keep track on the citations of UQLab_
 
 
 
-.. [UQLab] http://www.uqlab.com/
+.. _UQLab http://www.uqlab.com/
