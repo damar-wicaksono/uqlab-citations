@@ -1,0 +1,212 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Style LaTeX pour les abbreviations et notations Phimeca %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\NeedsTeXFormat{LaTeX2e}[1999/01/01]
+\ProvidesPackage{bstnotations}[2011/11/11]
+%	\RequirePackage{amsmath}
+%	\RequirePackage{amssymb}
+%	\RequirePackage{amsfonts}
+%	\RequirePackage{amsbsy}
+\RequirePackage{bbm}
+
+\newcommand{\uqlab}{\textsc{UQLab}}
+
+% Renouvellement de la commande \eqref initialement definie dans
+% amsmath pour faire e.g. ``Eq. (2)''
+\newcommand{\eqrefe}[1]{Eq.~(\ref{#1})}
+% \newcommand{\figref}[1]{Fig.~(\ref{#1})}
+\newcommand{\figref}[1]{Figure~\ref{#1}}
+\newcommand{\tabref}[1]{Table~\ref{#1}}
+\newcommand{\remar}{{\bf Remark~~}}
+\newcommand{\rems}{{\bf Remarks~~}}
+
+\newcommand{\mybullet}{{\includegraphics[height=1.5ex]{MyBullet}
+      \hspace*{1ex} }}
+\newcommand{\eqdef}{\stackrel{\text{def}}{=}}
+
+
+% Beamer commands
+\newcommand{\altx}{\usebeamercolor[fg]{alerted text}}
+%\newcommand{\titx}{\usebeamercolor[fg]{subtitle}}
+\newcommand{\titx}{\normalsize \color{BleuPhimeca3}}
+\newcommand{\stitx}{\usebeamercolor[fg]{subtitle}
+}
+
+\newcommand{\Tit}[1]{{\normalsize \color{Blue1} #1}}
+\newcommand{\sTit}[1]{{\color{Blue1} #1}}
+\newcommand{\alarm}[1]{{\color{red} \Large #1}}
+
+
+
+
+% Caracteres calligraphiques
+\newcommand{\ca}{{\mathcal A}}
+\newcommand{\cb}{{\mathcal B}}
+\newcommand{\cc}{{\mathcal C}}
+\newcommand{\cd}{{\mathcal D}}
+\newcommand{\ce}{{\mathcal E}}
+\newcommand{\cf}{{\mathcal F}}
+\newcommand{\cg}{{\mathcal G}}
+\newcommand{\ch}{{\mathcal H}}
+\newcommand{\ci}{{\mathcal I}}
+\newcommand{\cj}{{\mathcal J}}
+\newcommand{\ck}{{\mathcal K}}
+\newcommand{\cl}{{\mathcal L}}
+\newcommand{\cm}{{\mathcal M}}
+\newcommand{\cn}{{\mathcal N}}
+\newcommand{\co}{{\mathcal O}}
+\newcommand{\cp}{{\mathcal P}}
+\newcommand{\cq}{{\mathcal Q}}
+\newcommand{\crr}{{\mathcal R}}
+\newcommand{\cs}{{\mathcal S}}
+\newcommand{\ct}{{\mathcal T}}
+\newcommand{\cu}{{\mathcal U}}
+\newcommand{\cv}{{\mathcal V}}
+\newcommand{\cw}{{\mathcal W}}
+\newcommand{\cx}{{\mathcal X}}
+\newcommand{\cy}{{\mathcal Y}}
+\newcommand{\cz}{{\mathcal Z}}
+
+% Caracteres ensembles mathematiques
+\newcommand{\Cc}{{\mathbb C}}
+\newcommand{\Ff}{{\mathbb F}}
+\newcommand{\Nn}{{\mathbb N}}
+\newcommand{\Pp}{{\mathbb P}}
+\newcommand{\Qq}{{\mathbb Q}}
+\newcommand{\Rr}{{\mathbb R}}
+\newcommand{\Zz}{{\mathbb Z}}
+\newcommand{\Xx}{{\mathbb X}}
+\newcommand{\ldeu}[2]{\cl_2\left(#1,\,#2\right)}
+
+% Vraisemblance
+\newcommand{\LL}{{\textsf L}}
+\newcommand{\Lik}[1]{\textsf{L}\left(#1\right)} % Operateur vraisemblance
+
+% Grec raccourci
+\newcommand{\vare} {\varepsilon}
+\newcommand{\hh}{H}                              %random field
+
+% Notations
+\newcommand{\di}[1]{{\rm d}#1} 				% d droit pour les integrandes
+\newcommand{\ve}[1]{\boldsymbol{#1}}			% Vecteur
+\newcommand{\Ve}[1]{\boldsymbol{#1}}			% Vecteur
+\newcommand{\bs}[1]{\boldsymbol{#1}}
+\newcommand{\mat}[1]{\boldsymbol{#1}}			% Matrice
+\newcommand{\ma}[1]{\boldsymbol{\rm #1}}		% Vecteur
+\newcommand{\dpl}[1]{\displaystyle{#1}}
+\newcommand{\dsp}[1]{\displaystyle{#1}}
+\newcommand{\tr}{^{\textsf T}}				% Transpose
+\newcommand{\sps}{\Omega}
+\newcommand{\psp}{\left(\sps ,\, \cf ,\, \Pp \right)}	% Espace de probabilite
+\newcommand{\ps}{\Omega}				% ensemble des evenements elementaires
+\newcommand{\F}{\mathcal{F}}				% sigma-algebre
+\newcommand{\enu}{ , \, \dots \,,}
+\newcommand{\enum}{ , \, \dots \,,}
+\newcommand{\ComputedAt}[1]{\rule[-3mm]{0.2mm}{8mm}_{\;#1}}
+\newcommand{\undemi}{\frac{1}{2}}
+\newcommand{\innprod}[3]{< #1\,,\,#2 >_{#3}} 		% Already defined
+\newcommand{\norme}[2]{\parallel #1\parallel_{#2}}
+\newcommand{\prt}[1]{\left(#1\right)}			% entre parenthesese ()
+\newcommand{\acc}[1]{\left\{#1\right\}}			% entre accolades {}
+\newcommand{\bra}[1]{\left[ #1 \right]}			% entre crochets []
+\newcommand{\abs}[1]{\left| #1 \right|}			% abs() |x|
+\newcommand{\supp}[1]{\mathrm{D}_{#1}}			% support de ()
+\newcommand{\sign}{\mathrm{sign}}			% signe()
+
+\newcommand{\stru}{\rule[-2mm]{0cm}{6mm}}
+\newcommand{\ruh}{\rule{0cm}{5mm}}
+\newcommand{\rub}{\rule[-5mm]{0cm}{5mm}}
+\newcommand{\ua}{\ve{\alpha}}
+\newcommand{\ub}{\ve{\beta}}
+\newcommand{\uc}{\ve{\gamma}}
+\newcommand{\ud}{\ve{\delta}}
+
+\newcommand{\Var}[1]{{\rm Var}\left[ #1 \right]}
+\newcommand{\Varhat}[1]{{\rm \hat{Var}}\left[ #1 \right]}	% estimateur de la variance
+\newcommand{\Cov}[1]{{\rm Cov}\left[ #1 \right]}
+\newcommand{\Esp}[1]{{\mathbb E}\left[ #1 \right]}
+\newcommand{\Espi}[1]{{\mathbb E}'\left[ #1 \right]}
+\newcommand{\Espp}[1]{{\mathbb E}''\left[ #1 \right]}
+\newcommand{\Espe}[2]{{\mathbb E}_{#1}\left[#2\right]}
+\newcommand{\Vare}[2]{{\rm Var}_{#1}\left[#2\right]}
+\newcommand{\EspHat}[1]{\hat{\mathbb E}\left[#1 \right]}
+\newcommand{\Pro}{\mathbb{P}}				% probabilite
+\newcommand{\Prob}[1]{{\mathbb P}\left( #1 \right)}	% probabilite de ()
+\newcommand{\Ds}[1]{\mathcal{D}_{#1}}			% Support de la loi de 1
+\newcommand{\matcov} {\mathbf C}
+\newcommand{\matcor} {\mathbf R}
+\newcommand{\matD} {\mathbf D}
+\newcommand{\expo}[1]{\exp \left[ #1 \right]}
+
+\newcommand{\pfis}{{P}_{f,{\textsf{IS}}}}
+\newcommand{\pfform}{ P_{f,{\textsf{FORM}}}}
+\newcommand{\pfmcs}{ P_{f,{\textsf{MCS}}}}
+\newcommand{\pfss}{ P_{f,{\textsf{SS}}}}
+\newcommand{\pfsorm}{ P_{f,{\textsf{SORM}}}}
+\newcommand{\ProbForm}[1]{{\mathbb P}_{\textsf{FORM}}\left( #1 \right)}
+\newcommand{\Id}{\mathbf I}
+\newcommand{\fx}{f_{\ve{X}}(\ve{x})}
+\newcommand{\pdf}{f_{\ve{X}}(\ve{x})}
+\newcommand{\fxun}{f_{\Ve{X}_1 }(\ve{x}_1)}
+\newcommand{\fxdeux}{f_{\Ve{X}_2 }(\ve{x}_2)}
+\newcommand{\ech}{\left\{ x^{(1)}, \, \dots\,, x^{(N)}  \right\}}
+\newcommand{\fcar}[2] {{\mathbbm{1}}_{#1}\left(#2\right)}
+
+
+% Latin
+\newcommand{\ie}{{\em i.e.} }
+\newcommand{\eg}{{\em e.g.} }
+\newcommand{\etc}{{\em etc.} }
+\newcommand{\vs}{{\em vs.} }
+\newcommand{\prior}{{\em a priori} }
+\newcommand{\post}{{\em a posteriori} }
+\newcommand{\etal}{{\em et al.} }
+
+
+% Beamer adds
+\newcommand{\hpcinq}{\hspace*{5mm}}
+\newcommand{\hpdix}{\hspace*{10mm}}
+\newcommand{\vpdeux}{\vspace*{2mm}}
+\newcommand{\vptrois}{\vspace*{3mm}}
+\newcommand{\vpcinq}{\vspace*{5mm}}
+\newcommand{\vmun}{\vspace*{-1mm}}
+\newcommand{\vmdeux}{\vspace*{-2mm}}
+\newcommand{\vmtrois}{\vspace*{-3mm}}
+\newcommand{\vmcinq}{\vspace*{-5mm}}
+
+% Beamer cite references
+\newcommand{\refcite}[2]{{\tiny \color{#1} #2}}
+\newcommand{\refcitedeux}[3]{{\tiny \color{#1}
+  \begin{tabular}[c]{l}
+   {#2}\\
+    {#3}\\
+  \end{tabular}
+}}
+
+% Beamer conclusion
+\newcommand{\emphconc}[1]
+{  \begin{center}
+    \begin{tikzpicture}[rounded corners]
+      \path  (0,0) node[fill=GrisBleuPale,draw=BleuPhimeca1,
+      text centered ] {\color{BleuPhimeca3}
+         \begin{minipage}[c]{0.85\linewidth}
+           \begin{center}
+             #1
+           \end{center}
+         \end{minipage}
+       } ;
+    \end{tikzpicture}
+  \end{center}
+}
+
+
+\newcommand{\empheq}[1]
+{      \begin{tikzpicture}[rounded corners]
+      \path  (0,0) node[fill=GrisBleuPale,draw=BleuPhimeca1,
+      text centered ] {\color{BleuPhimeca3}
+             #1
+       } ;
+    \end{tikzpicture}
+}
