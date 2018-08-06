@@ -22,7 +22,7 @@
 \usepackage{inputenc}
 \PassOptionsToPackage{T1}{fontenc} % T2A for cyrillics
 \usepackage{fontenc} 
-\UseRawInputEncoding
+%\UseRawInputEncoding
 
 %******************************************
 % 2. Languages and other special characters
@@ -58,8 +58,9 @@
 %****************
 \usepackage{hyperref}   % Inline hyperlink
 %\usepackage{natbib}     % Bibliography using Author-year format
-\usepackage[backend=bibtex,bibencoding=ascii,style=numeric,sorting=none,doi=false]{biblatex}
-\addbibresource{../../outReachEmail/scopusBibTeX20180803-4.bib}
+\usepackage[backend=biber,bibencoding=ascii,style=numeric-comp,sorting=none,doi=false]{biblatex}
+\addbibresource{scopusBibTeX20180803.bib}
+\usepackage{bibentry}
 
 %******************
 % 5. Other packages

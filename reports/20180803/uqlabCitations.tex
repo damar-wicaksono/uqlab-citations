@@ -10,20 +10,20 @@
 \selectlanguage{english}
 
 %
-%\graphicspath{{./},{./Figures/}}
+\graphicspath{{./},{./figures/}}
 \renewcommand{\baselinestretch}{1.3}
 
 %********************
 % Document properties
 %******************** 
-\RefDocument{UQLab Citations (Q2/2018)}
-\Date{01.08.2018}
+\RefDocument{\uqlab~External Citations (Q2/2018)}
+\Date{03.08.2018}
 \Redacteur{D. Wicaksono}     
-\TitleReport{UQLab Citations (Q2/2018)}
+\TitleReport{\uqlab~External Citations (Q2/2018)}
 \DateDiffusion{August 3, 2018}
 \From{D. Wicaksono}
 \To{B. Sudret \& S. Marelli}
-\CC{--}
+\CC{\uqlab~Devs.}
 
 %**************
 % Main document
@@ -46,12 +46,13 @@ Out of that $81$ hits, $60$ do not list either Bruno nor Stefano as co-authors.
 Finally, after additional skimming into each paper, $47$ articles that explicitly used \uqlab~in their research were identified, while the rest is simply citing that~\uqlab~is available as a tool.
 Table~\ref{tab:citing_articles} lists the articles according to the identified scientific domains.
 Tables~\ref{tab:citing_journals} and~\ref{tab:citing_conference} list the journal and conference proceeding names, respectively.
-Finally, Fig.~\ref{fig:citing} illustrates the number of publications citing \uqlab~over time.
+Finally, Fig.~\ref{fig:citing} illustrates the number of publications citing \uqlab~over time
+and Fig.~\ref{fig:citing_tf} and~\ref{fig:citing_tfidf} compare the terms appeared in the abstracts between internal (including collaboration) and external articles.
 \begin{table}[!ht]
     \centering
     \caption{\uqlab~domain of applications based on citing articles.}
     \label{tab:citing_articles} 
-    \begin{tabularx}{\textwidth}{cllX}\toprule
+    \begin{tabularx}{0.75\textwidth}{cllX}\toprule
       \textbf{No.} & \textbf{Domain} & \textbf{Count} & \textbf{Citing Articles}\\\midrule        
       1           & electrical engineering                 &  13 & \cite{Barbi2018,Ni2018,Larbi2018a,Larbi2018,Larbi2017,Li2017,Larbi2017a,Du2017a,Du2017,Ni2017,Acikgoz2016,Bilicz2016,Bdour2016}\\
       2           & civil engineering                      &   8 & \cite{Fengjie2018,Dutta2018,Hariri-Ardebili2018,Chen2017,Mylonas2017a,Mylonas2017,Sanctis2016,Abdallah2016}\\
@@ -68,6 +69,8 @@ Finally, Fig.~\ref{fig:citing} illustrates the number of publications citing \uq
                   & \textbf{Total}                         &  47 & \\\bottomrule
   \end{tabularx}
 \end{table}
+
+\section{Introduction}
 
 \begin{table}[!ht]
   \centering
@@ -129,9 +132,27 @@ Finally, Fig.~\ref{fig:citing} illustrates the number of publications citing \uq
 \end{table}
 
 \begin{figure}[!ht]
-  \includegraphics[width=\linewidth]{citing.pdf}
+  \centering
+  \includegraphics[width=0.8\textwidth]{citing.pdf}
   \caption{The number of publications citing \uqlab~over time.}
   \label{fig:citing}
+\end{figure}
+
+
+\begin{figure}
+\centering     %%% not \center
+\subfigure[Internal and collaborations ($21$ articles)]{\label{fig:citing_internal_tf}\includegraphics[width=0.45\textwidth]{wordcloud_internal_tf.pdf}}
+\subfigure[External ($47$ articles)]{\label{fig:citing_external_tf}\includegraphics[width=0.45\textwidth]{wordcloud_external_tf.pdf}}
+\caption{Word clouds of popular terms appeared in the abstract of articles citing \uqlab~weighted by TF (\emph{Term Frequency}). Using TF, the clouds display the most used terms in a collection of documents. Larger terms mean that the terms appear more across documents.}
+\label{fig:citing_tf}
+\end{figure}
+
+\begin{figure}
+\centering     %%% not \center
+\subfigure[Internal and collaborations ($21$ articles)]{\label{fig:citing_internal_tfidf}\includegraphics[width=0.45\textwidth]{wordcloud_internal_tfidf.pdf}}
+\subfigure[External ($47$ articles)]{\label{fig:citing_external_tfidf}\includegraphics[width=0.45\textwidth]{wordcloud_external_tfidf.pdf}}
+\caption{Word clouds of unique terms appeard in the abstract of articles citing \uqlab~weighted by TF-IDF (\emph{Term Frequency - Inverse Document Frequency}). Using TF-IDF, the cloud displays the uniqueness of prominent terms from a given document. The importance of a term is inflated if it appears more in a given document, but less in other documents. Larger terms mean that the terms are unique to a small number of documents. The weighting is an approach to highlight diversity of terms across documents.}
+\label{fig:citing_tfidf}
 \end{figure}
 
 \clearpage
