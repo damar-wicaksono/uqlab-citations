@@ -1,0 +1,57 @@
+<ul>
+{% for bib_entry in bib_entries %}
+    <li>    
+        <span class="bib_title">{{ bib_entry.title }}</span>,
+        <span class="bib_author">{{ bib_entry.author }},</span>
+        {% if "eventdate" in bib_entry %}
+            In <span class="bib_journal">{{ bib_entry.booktitle }},</span>
+            {% if "address" in bib_entry %}
+                <span class="bib_address">{{ bib_entry.address }},</span>
+            {% endif %}
+            
+            {% if "pages" not in bib_entry %}
+                <span class="bib_dates">{{ bib_entry.dates }}.</span>
+            {% else %}
+                <span class="bib_dates">{{ bib_entry.dates }},</span>
+                <span class="bib_pages">pp. {{ bib_entry.pages }}.</span>
+            {% endif %}
+        {% elif "school" in bib_entry %}
+            {% if "phdthesis" in bib_entry.type %}
+                <span class="bib_volume">M.S. thesis,</span>
+                <span class="bib_journal">{{ bib_entry.school }}</span>,
+            {% endif %}
+            {% if "mathesis" in bib_entry.type %}
+                <span class="bib_volume">Ph.D. dissertation,</span>
+                <span class="bib_journal">{{ bib_entry.school }}</span>,
+            {% endif %}
+            <span class="bib_volume">{{ bib_entry.address }},</span>
+            <span class="bib_year">{{ bib_entry.year }}.</span>
+        {% else %}
+            {% if "journal" in bib_entry %}
+                <span class="bib_journal">{{ bib_entry.journal }}</span>,
+            {% endif %}
+            {% if "booktitle" in bib_entry %}
+                <span class="bib_booktitle">{{ bib_entry.booktitle }}</span>,
+            {% endif %}
+            {% if "volume" in bib_entry %}
+                <span class="bib_volume">{{ bib_entry.volume }},</span>
+            {% endif %}
+            {% if "number" in bib_entry %}
+                <span class="bib_number">({{ bib_entry.number }}),</span>
+            {% endif %}
+            {% if "pages" in bib_entry %}
+                <span class="bib_pages">pp. {{ bib_entry.pages }},</span>
+            {% endif %}
+            {% if "year" in bib_entry %}
+                <span class="bib_year">{{ bib_entry.year }}.</span>
+            {% endif %}
+        {% endif %}
+        
+        {% if "doi" in bib_entry %}
+            <span class="bib_doi"><a class = "bib_url" href="{{ bib_entry.url }}" target="_blank">DOI: {{ bib_entry.doi }}</a></span>
+        {% elif "url" in bib_entry %}
+            <span class="bib_doi"><a class = "bib_url" href="{{ bib_entry.url }}" target="_blank">URL</a></span>
+        {% endif %}
+    </li>
+{% endfor %}
+</ul>
