@@ -14,15 +14,11 @@ Installation
 ------------
 
 Use the package manager pip_ to install the python package ``uq_citations``
-from the cloned source directory.
-
-.. codeblock:: bash
+from the cloned source directory::
 
    pip install 
 
-or for editable mode
-
-.. codeblock:: bash
+or for editable mode::
 
    pip install -e .
 
