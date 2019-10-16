@@ -59,6 +59,35 @@ Therefore, this excludes works that merely mention UQLab.
 
 The file ``uqlab-citations.bib`` inside the folder ``./bib`` contains the latest list of UQLab external citations.
 
++-------------------------------------------+---------------------------------+
+| Main subjects                             | Subjects                        |
++===========================================+=================================+
+| Life Sciences                             | - Biology                       |
+|                                           | - Biomedical sciences           |
++-------------------------------------------+---------------------------------+
+| Computational Science and Engineering     | **N/A**                         |
++-------------------------------------------+---------------------------------+
+| Engineering Applications                  | - Chemical engineering          |
+|                                           | - Civil engineering             |
+|                                           | - Electrical engineering        |
+|                                           | - Energy engineering            |
+|                                           | - Mechanical engineering        |
+|                                           | - Monitoring and remote sensing |
+|                                           | - Nuclear engineering           |
+|                                           | - Ocean engineering             |
++-------------------------------------------+---------------------------------+
+| Geosciences and Environmental Engineering | - Geoscience                    |
+|                                           | - Geology                       |
+|                                           | - geomechanics                  |
+|                                           | - Environmental engineering     |
++-------------------------------------------+---------------------------------+
+
+The ``keywords`` field of each BibTeX entry, with the exception of the *Computational Science and Engineering**,
+must contain **at most 1** of the subject listed in the *Subject* column above.
+
+Due to limited citations, the subject _Material science and engineering_ should be assigned _Mechanical engineering_ as its subject.
+
+
 .. _UQLab: http://www.uqlab.com/
 .. _`publications page`: https://uqlab.com/publications
 .. _pip: https://pip.pypa.io/en/stable/
