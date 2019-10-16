@@ -5,24 +5,6 @@
 __author__ = "Damar Wicaksono"
 
 
-SUBJECTS = ["electrical engineering",
-            "computational science and engineering",
-            "civil engineering",
-            "sensors engineering",
-            "mechanical engineering",
-            "chemical engineering",
-            "ocean engineering",
-            "geomechanics",
-            "geoscience",
-            "nuclear engineering",
-            "biomedical science",
-            "material science and engineering",
-            "biology",
-            "energy engineering",
-            "hydrology",
-            "environmental engineering"]
-
-
 def convert_conference_date(event_date):
     """Convert conference date
     
@@ -69,10 +51,11 @@ def parse_author_names(author_names):
             author.reverse()
             authors[i] = " ".join(author)
             
-    # Process 
+    # Process the last entry of name and add "and" 
     if len(authors) > 1:
         authors[-1] = "and {}".format(authors[-1])
     
+    # Join multiple author names
     if len(authors) > 2:
         parsed_author_names = ", ".join(authors)
     elif len(authors) == 2:
@@ -83,32 +66,8 @@ def parse_author_names(author_names):
     return parsed_author_names
 
 
-def determine_subject(keywords, subjects=SUBJECTS):
-    """determine the subject based on assigned keyword in BibTeX file
-    
-        Here are the conventions:
-        1. "geosciences" consist of "geomechanics", "hidrology", and "geoscience"
-        2. "material" science and engineering belongs to "mechanical engineering"
-        3. "sensors engineering" belong to "monitoring and remote sensing"
-    """
-    geosciences = ["geomechanics", "hydrology", "geoscience", "environmental engineering"]
-    mechanical = ["mechanical engineering", "material science and engineering"]
-    monitoring = ["sensors engineering"]
-    for subject in subjects:
-        if subject in keywords.lower():
-            if subject in geosciences:
-                subject = "geosciences and enviromental engineering"
-            if subject in mechanical:
-                subject = "mechanical engineering"
-            if subject in monitoring:
-                subject = "monitoring and remote sensing"
-            break
-    
-    return subject
-
-
 def parse_biblist(biblist):
-    """Parse the list of citations"""
+    """Parse the list of citations."""
     
     biblist_out = biblist.copy()
     
@@ -123,8 +82,5 @@ def parse_biblist(biblist):
         # Convert conference date
         if entry["ENTRYTYPE"] == "inproceedings":
             biblist_out[i]["eventdate"] = convert_conference_date(entry["eventdate"])
-
-        # Assign subjects
-        biblist_out[i]["subject"] = determine_subject(entry["keywords"])
             
     return biblist_out
