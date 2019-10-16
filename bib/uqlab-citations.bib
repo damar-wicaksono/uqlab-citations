@@ -67,24 +67,6 @@
   url          = {http://dx.doi.org/10.1109/APS.2016.7695945},
 }
 
-@InCollection{Al2018,
-  author    = {Resul Al and Chitta Ranjan Behera and Alexandr Zubov and Gürkan Sin},
-  title     = {Systematic framework development for the construction of surrogate models for wastewater treatment plants},
-  booktitle = {Computer Aided Chemical Engineering},
-  publisher = {Elsevier},
-  year      = {2018},
-  editor    = {Mario R. Eden and Marianthi G. Ierapetritou and Gavin P. Towler},
-  volume    = {44},
-  pages     = {1909--1914},
-  abstract  = {Surrogate modeling (also referred to as metamodeling) has attracted increased attention from researchers in various fields of engineering due to its use in computationally expensive engineering tasks such as Monte Carlo based global sensitivity analysis and process design optimization. However, the applications of surrogate models in the field of wastewater treatment modeling have not been extensively explored in the literature. In this work we present a systematic methodology for construction of powerful surrogate models to be used for the global sensitivity analysis of Benchmark Simulation Model 1 (BSM1) plant. A quasi-random design of experiments technique, Sobol sampling, is employed to generate an experimental design, which is further used to build surrogate models. A class of advanced metamodeling algorithms such as sparse polynomial chaos expansion (PCE) using least angle regression, Kriging interpolation, polynomial chaos Kriging (PCK), radial basis function (RBF) interpolation, multivariate adaptive regression splines (MARS), and a multilayer perceptron type feedforward neural network (ANN) are applied. The generalization error of the developed models has been estimated using holdout cross-validation with coefficient of determination (R2) and root mean squared error (RMSE) being used for evaluation of model predictive accuracy and model selection, respectively. The framework was further investigated for its suitability in a Monte Carlo based global sensitivity analysis using Sobol' method. The results obtained suggest that by following the framework, ANN and Kriging type surrogate models can effectively be constructed and used to estimate Sobol’ sensitivity indices of WWTP design parameters.},
-  date      = {2018-08-02},
-  doi       = {10.1016/B978-0-444-64241-7.50313-X},
-  file      = {:Al2018 - Systematic framework development for the construction of surrogate models for wastewater treatment plants.pdf:PDF},
-  keywords  = {chemical engineering},
-  piis      = {85050584125},
-  url       = {http://dx.doi.org/10.1016/B978-0-444-64241-7.50313-X},
-}
-
 @Article{Bdour2016,
   author   = {Tarek Bdour and Alain Reineix},
   title    = {Global sensitivity analysis and uncertainty quantification of radiated susceptibility in {PCB} using nonintrusive {P}olynomial {C}haos {E}xpansions},
@@ -116,23 +98,6 @@
   url          = {http://dx.doi.org/10.1109/WPT.2016.7498861},
 }
 
-@Article{Borgonovo2017,
-  author   = {E. Borgonovo and X. Lu and E. Plischke and O. Rakovec and M. C. Hill},
-  title    = {Making the most out of a hydrological model data set: {S}ensitivity analyses to open the model black-box},
-  journal  = {Water Resources Research},
-  year     = {2017},
-  volume   = {53},
-  number   = {9},
-  pages    = {7933--7950},
-  abstract = {© 2017. American Geophysical Union. All Rights Reserved.In this work, we investigate methods for gaining greater insight from hydrological model runs conducted for uncertainty quantification and model differentiation. We frame the sensitivity analysis questions in terms of the main purposes of sensitivity analysis: parameter prioritization, trend identification, and interaction quantification. For parameter prioritization, we consider variance-based sensitivity measures, sensitivity indices based on the L1-norm, the Kuiper metric, and the sensitivity indices of the DELSA methods. For trend identification, we investigate insights derived from graphing the one-way ANOVA sensitivity functions, the recently introduced CUSUNORO plots, and derivative scatterplots. For interaction quantification, we consider information delivered by variance-based sensitivity indices. We rely on the so-called given-data principle, in which results from a set of model runs are used to perform a defined set of analyses. One avoids using specific designs for each insight, thus controlling the computational burden. The methodology is applied to a hydrological model of a river in Belgium simulated using the well-established Framework for Understanding Structural Errors (FUSE) on five alternative configurations. The findings show that the integration of the chosen methods provides insights unavailable in most other analyses.},
-  date     = {2017-08-21},
-  doi      = {10.1002/2017WR020767},
-  file     = {:Borgonovo2017 - Making the most out of a hydrological model data set_ Sensitivity analyses to open the model black-box.pdf:PDF},
-  keywords = {hydrology},
-  piis     = {85030105143},
-  url      = {http://dx.doi.org/10.1002/2017WR020767},
-}
-
 @InProceedings{Capellari2016,
   author       = {Giovanni Capellari and Eleni Chatzi and Stefano Mariani},
   title        = {An optimal sensor placement method for {SHM} based on {B}ayesian experimental design and {P}olynomial {C}haos {E}xpansion},
@@ -145,7 +110,7 @@
   doi          = {10.7712/100016.2257.6762},
   eventdate    = {2016-06-05/2016-06-10},
   file         = {:Capellari2016 - An optimal sensor placement method for SHM based on Bayesian experimental design and Polynomial Chaos Expansion.pdf:PDF},
-  keywords     = {sensors engineering, used UQLab},
+  keywords     = {monitoring and remote sensing, used UQLab},
   piis         = {84995471069},
   url          = {http://dx.doi.org/10.7712/100016.2257.6762},
 }
@@ -211,18 +176,6 @@
   keywords = {ocean engineering, used UQLab},
   piis     = {85042905073},
   url      = {http://dx.doi.org/10.1016/j.oceaneng.2018.02.045},
-}
-
-@InProceedings{Dewitt2017,
-  author       = {Jon Dewitt and Enriquez Dalisay and Edwin N. Quiros},
-  title        = {Uncertainty quantification of autoignition kinetics using sparse polynomial chaos},
-  booktitle    = {11th Asia-Pacific Conference on Combustion (ASPACC 2017)},
-  year         = {2017},
-  address      = {Sidney, Australia},
-  organization = {The University of Sidney and UNSW Sidney},
-  abstract     = {Quantification of prediction uncertainties is requisite for the development of truly predictive combustion models. Parameter uncertainties, such as those associated with reaction rate coefficients, give rise to combustion quantities of interest, such as ignition delay, that are uncertain. In this work, we assessed the applicability of polynomial chaos expansions based on least angle regression (LAR PCE) [1] for the uncertainty propagation (UP) and global sensitivity analysis (SA) of autoignition kinetics. The UP applicability assessment was done on atmospheric, stoichiometric constant volume 0-D autoignition of methane over initial temperatures of 1000-1800 K, and the global SA applicability assessment was done on the same pressure and equivalence ratio conditions but only at an initial temperature of 1000 K. The chemical kinetic mechanism GRI-Mech 3.0 [2] was used for all simulations and direct Monte Carlo results served as references for comparison. We demonstrated the effectiveness of LAR PCE due to its ability to construct accurate sparse PCEs. Further, we carried out UP on a comprehensive range of operating conditions. Given our findings, we anticipate that LAR PCE will be used in the future for the UP and global SA of very large combustion kinetic models involving complex fuels.},
-  eventdate    = {2017-12-10/2017-10-14},
-  piis         = {85046487994},
 }
 
 @InProceedings{Du2017,
@@ -303,7 +256,7 @@
   doi          = {10.1109/IGARSS.2016.7730857},
   eventdate    = {2016-07-10/2016-07-15},
   file         = {:Erten2016a - SAR algorithms for crop height estimation_ The paddy-rice case study.pdf:PDF},
-  keywords     = {sensors engineering, used UQLab},
+  keywords     = {monitoring and remote sensing, used UQLab},
   piis         = {85007425666},
   url          = {http://dx.doi.org/10.1109/IGARSS.2016.7730857},
 }
@@ -506,22 +459,6 @@
   url          = {http://dx.doi.org/10.1109/ICEAA.2017.8065324},
 }
 
-@Article{Mara2017,
-  author   = {Thierry A. Mara and Benjamin Belfort and Vincent Fontaine and Anis Younes},
-  title    = {Addressing factors fixing setting from given data: {A} comparison of different methods},
-  journal  = {Environmental Modelling and Software},
-  year     = {2017},
-  volume   = {87},
-  pages    = {29--38},
-  abstract = {This paper deals with global sensitivity analysis of computer model output. Given an independent input sample and associated model output vector with possibly the vector of output derivatives with respect to the input variables, we show that it is possible to evaluate the following global sensitivity measures: (i) the Sobol' indices, (ii) the Borgonovo's density-based sensitivity measure, and (iii) the derivative-based global sensitivity measure of Sobol' and Kucherenko. We compare the efficiency of the different methods to address factors fixing setting, an important issue in global sensitivity analysis. First, global sensitivity analysis of the Ishigami function is performed with the different methods. Then, they are applied to two different responses of a soil drainage model. The results show that the polynomial chaos expansion for estimating Sobol' indices is the most efficient approach.},
-  date     = {2016-11-05},
-  doi      = {10.1016/j.envsoft.2016.10.004},
-  file     = {:Mara2017 - Addressing factors fixing setting from given data_ A comparison of different methods.pdf:PDF},
-  keywords = {computational science and engineering},
-  piis     = {84994027682},
-  url      = {http://dx.doi.org/10.1016/j.envsoft.2016.10.004},
-}
-
 @Article{Mentani2016,
   author   = {Alessio Mentani and Laura Govoni and Guido Gottardi and Stéphane Lambert and Franck Bourrier and David Toe},
   title    = {A new approach to evaluate the effectiveness of rockfall barriers},
@@ -537,22 +474,6 @@
   piis     = {84988353699},
   review   = {Used PCE in UQLab.},
   url      = {http://dx.doi.org/10.1016/j.proeng.2016.08.462},
-}
-
-@Article{Murcia2018,
-  author   = {Juan Pablo Murcia and Pierre-Elouan Réthoré and Nikolay Dimitrov and Anand Natarajan and John Dalsgaard Sørensen and Peter Graf and Taeseong Kim},
-  title    = {Uncertainty propagation through an aeroelastic wind turbine model using polynomial surrogates},
-  journal  = {Renewable Energy},
-  year     = {2018},
-  volume   = {119},
-  pages    = {910--922},
-  abstract = {Polynomial surrogates are used to characterize the energy production and lifetime equivalent fatigue loads for different components of the DTU 10 MW reference wind turbine under realistic atmospheric conditions. The variability caused by different turbulent inflow fields are captured by creating independent surrogates for the mean and standard deviation of each output with respect to the inflow realizations. A global sensitivity analysis shows that the turbulent inflow realization has a bigger impact on the total distribution of equivalent fatigue loads than the shear coefficient or yaw miss-alignment. The methodology presented extends the deterministic power and thrust coefficient curves to uncertainty models and adds new variables like damage equivalent fatigue loads in different components of the turbine. These surrogate models can then be implemented inside other work-flows such as: estimation of the uncertainty in annual energy production due to wind resource variability and/or robust wind power plant layout optimization. It can be concluded that it is possible to capture the global behavior of a modern wind turbine and its uncertainty under realistic inflow conditions using polynomial response surfaces. The surrogates are a way to obtain power and load estimation under site specific characteristics without sharing the proprietary aeroelastic design.},
-  date     = {2017-07-17},
-  doi      = {10.1016/j.renene.2017.07.070},
-  file     = {:Murcia2018 - Uncertainty propagation through an aeroelastic wind turbine model using polynomial surrogates.pdf:PDF},
-  keywords = {energy engineering},
-  piis     = {85032993803},
-  url      = {http://dx.doi.org/10.1016/j.renene.2017.07.070},
 }
 
 @InProceedings{Mylonas2017,
@@ -671,21 +592,6 @@
   url      = {http://dx.doi.org/10.1088/0031-9155/61/12/4646},
 }
 
-@InProceedings{Reis2018,
-  author       = {T. Reis and D. Calderon and P. Sartor and J. E. Cooper and J. Cheeseman},
-  title        = {Development of a wing weight convergence simulation including uncertainty modelling and sensitivity analysis},
-  booktitle    = {2018 AIAA Non-Deterministic Approaches Conference},
-  year         = {2018},
-  address      = {Kissimmee, Florida, USA},
-  organization = {American Institute of Aeronautics and Astronautics Inc (AIAA)},
-  abstract     = {Weight is a crucial part in the design of an aircraft, having a major influence on its performance. Therefore, being able to track the weight throughout the entire design process, including assessment of uncertainty and risk, is essential. This paper presents a new methodology for modelling uncertainty and performing sensitivity studies on aircraft weight estimation. A process has been developed that emulates the weight convergence corridor for a representative commercial jet aircraft. It combines a traditional wing-box sizing method for structural weight with a variety of alternative methods for nonstructural weight. The objective function for the sizing routine is to weight minimisation. The alternative methods mimic the different phases of design in the aircraft development cycle. Maturity of design translates to the status of the information available, which translates to accuracy in the weight estimation method in use. The unique feature of this process is the incorporation of uncertainty which is achieved by modelling the uncertain parameters based on different probability distribution functions (PDFs). Design features and aircraft components are interrelated and therefore an underlying dependency grid is generated. Combining the PDFs on the grid propagates the uncertainty towards an ultimate distribution of the total weight. This paper investigates the primary uses of the process developed for wing weight estimation. It investigates the sensitivities of the process, identifies its predominant uncertainty sources and quantifies their impact on the aircraft weight.},
-  doi          = {10.2514/6.2018-2165},
-  eventdate    = {2018-01-08/2018-01-12},
-  keywords     = {aeronautical engineering},
-  piis         = {85044382453},
-  url          = {http://dx.doi.org/10.2514/6.2018-2165},
-}
-
 @Article{Sanctis2016,
   author   = {Gianluca De Sanctis and Mario Fontana},
   title    = {Risk-based optimisation of fire safety egress provisions based on the {LQI} acceptance criterion},
@@ -702,22 +608,6 @@
   url      = {http://dx.doi.org/10.1016/j.ress.2016.04.001},
 }
 
-@InProceedings{Sawicka2016,
-  author       = {K. Sawicka and G. B.M. Heuvelink},
-  title        = {'spup' - {A}n {R} package for uncertainty propagation in spatial environmental modelling},
-  booktitle    = {Proceedings of Spatial Accuracy 2016},
-  year         = {2016},
-  pages        = {275--282},
-  address      = {Montpellier, France},
-  organization = {International Spatial Accuracy Research Association (ISARA)},
-  abstract     = {Computer models are crucial tools in engineering and environmental sciences for simulating the behaviour of complex systems. While many models are deterministic, the uncertainty in their predictions needs to be estimated before they are used for decision support. Advances in uncertainty analysis have been paralleled by a growing number of software tools, but none has gained recognition for universal applicability, including case studies with spatial models and spatial model inputs. We develop an R package that facilitates uncertainty propagation analysis in spatial environmental modelling. The 'spup' package includes functions for uncertainty model specification, propagation of uncertainty using Monte Carlo (MC) techniques, and uncertainty visualization functions. Uncertain variables are represented as objects which uncertainty is described by probability distributions. Spatial auto-correlation within a variable and crosscorrelation between variables is also accommodated for. The package has implemented the MC approach with efficient sampling algorithms, i.e. stratified random sampling and Latin hypercube sampling. The MC realizations may be used as an input to the environmental models called from R, or externally. Selected static and interactive visualization methods that are understandable by nonstatisticians can be used to visualize uncertainty about the measured input, model parameters and output of the uncertainty propagation.},
-  eventdate    = {2016-07-05/2016-07-08},
-  file         = {:Sawicka2016 - 'spup'- An R package for uncertainty propagation in spatial environmental modelling.pdf:PDF},
-  keywords     = {environmental engineering},
-  piis         = {84991310059},
-  url          = {http://library.wur.nl/WebQuery/wurpubs/509046},
-}
-
 @InCollection{Schenkendorf2017,
   author    = {René Schenkendorf and Xiangzhong Xie and Ulrike Krewer},
   title     = {An efficient polynomial chaos expansion strategy for active fault identification of chemical processes},
@@ -732,22 +622,6 @@
   keywords  = {chemical engineering, used UQLab},
   piis      = {85041401594},
   url       = {http://dx.doi.org/10.1016/B978-0-444-63965-3.50281-6},
-}
-
-@InProceedings{Terraz2017,
-  author       = {Théophile Terraz and Alejandro Ribes and Yvan Fournier and Bertrand Iooss and Bruno Raffin},
-  title        = {Melissa: {L}arge scale in transit sensitivity analysis avoiding intermediate files},
-  booktitle    = {Proceedings of the International Conference for High Performance Computing, Networking, Storage and Analysis (SC 2017)},
-  year         = {2017},
-  address      = {Denver, Colorado, USA},
-  organization = {Association for Computing Machinery (ACM)},
-  abstract     = {Global sensitivity analysis is an important step for analyzing and validating numerical simulations. One classical approach consists in computing statistics on the outputs from well-chosen multiple simulation runs. Simulation results are stored to disk and statistics are computed postmortem. Even if supercomputers enable to run large studies, scientists are constrained to run low resolution simulations with a limited number of probes to keep the amount of intermediate storage manageable. In this paper we propose a file avoiding, adaptive, fault tolerant and elastic framework that enables high resolution global sensitivity analysis at large scale. Our approach combines iterative statistics and in transit processing to compute Sobol' indices without any intermediate storage. Statistics are updated on-the-fly as soon as the in transit parallel server receives results from one of the running simulations. For one experiment, we computed the Sobol' indices on 10M hexahedra and 100 timesteps, running 8000 parallel simulations executed in 1h27 on up to 28672 cores, avoiding 48TB of file storage.},
-  doi          = {10.1145/3126908.3126922},
-  eventdate    = {2017-11-12/2017-11-17},
-  file         = {:Terraz2017 - Melissa_ Large scale in transit sensitivity analysis avoiding intermediate files.pdf:PDF},
-  keywords     = {computational science and engineering},
-  piis         = {85040167418},
-  url          = {http://dx.doi.org/10.1145/3126908.3126922},
 }
 
 @Article{Toe2017,
@@ -784,22 +658,6 @@
   url      = {http://dx.doi.org/10.1007/s00603-017-1394-9},
 }
 
-@Article{Torres-Matallana2018,
-  author   = {Jairo Arturo Torres-Matallana and Ulrich Leopold and Gerard B.M. Heuvelink},
-  title    = {{stUPscales}: {An} {R}-package for spatio-temporal uncertainty propagation across multiple scales with examples in urban water modelling},
-  journal  = {Water},
-  year     = {2018},
-  volume   = {10},
-  number   = {7},
-  abstract = {Integrated environmental modelling requires coupling sub-models at different spatial and temporal scales, thus accounting for change of support procedures (aggregation and disaggregation). We introduce the R-package spatio-temporal Uncertainty Propagation across multiple scales, stUPscales, which constitutes a contribution to state-of-the-art open source tools that support uncertainty propagation analysis in temporal and spatio-temporal domains. We illustrate the tool with an uncertainty propagation example in environmental modelling, specifically in the urban water domain. The functionalities of the class setup and the methods and functions MC.setup, MC.sim, MC.analysis and Agg.t are explained, which are used for setting up, running and analysing Monte Carlo uncertainty propagation simulations, and for spatio-temporal aggregation. We also show how the package can be used to model and predict variables that vary in space and time by using a spatio-temporal variogram model and space-time ordinary kriging. stUPscales takes uncertainty characterisation and propagation a step further by including temporal and spatio-temporal auto- and cross-correlation, resulting in more realistic (spatio-)temporal series of environmental variables. Due to its modularity, the package allows the implementation of additional methods and functions for spatio-temporal disaggregation of model inputs and outputs, when linking models across multiple space-time scales.},
-  date     = {2018-06-14},
-  doi      = {10.3390/w10070837},
-  file     = {:Torres-Matallana2018 - stUPscales_ An R-package for spatio-temporal uncertainty propagation across multiple scales with examples in urban water modelling.pdf:PDF},
-  keywords = {environmental engineering},
-  piis     = {85048591822},
-  url      = {http://dx.doi.org/10.3390/w10070837},
-}
-
 @Article{Turati2018,
   author   = {Pietro Turati and Antonio Cammi and Stefano Lorenzi and Nicola Pedroni and Enrico Zio},
   title    = {Adaptive simulation for failure identification in the {A}dvanced {L}ead {F}ast {R}eactor {E}uropean {D}emonstrator},
@@ -830,38 +688,6 @@
   keywords = {mechanical engineering, used UQLab},
   piis     = {85050528394},
   url      = {http://dx.doi.org/10.1016/j.ijheatmasstransfer.2018.07.073},
-}
-
-@Article{Wang2016,
-  author   = {Chen Wang and Qingyun Duan and Charles H. Tong and Zhenhua Di and Wei Gong},
-  title    = {A {GUI} platform for uncertainty quantification of complex dynamical models},
-  journal  = {Environmental Modelling and Software},
-  year     = {2016},
-  volume   = {76},
-  pages    = {1--12},
-  abstract = {Uncertainty quantification (UQ) refers to quantitative characterization and reduction of uncertainties present in computer model simulations. It is widely used in engineering and geophysics fields to assess and predict the likelihood of various outcomes. This paper describes a UQ platform called UQ-PyL (Uncertainty Quantification Python Laboratory), a flexible software platform designed to quantify uncertainty of complex dynamical models. UQ-PyL integrates different kinds of UQ methods, including experimental design, statistical analysis, sensitivity analysis, surrogate modeling and parameter optimization. It is written in Python language and runs on all common operating systems. UQ-PyL has a graphical user interface that allows users to enter commands via pull-down menus. It is equipped with a model driver generator that allows any computer model to be linked with the software. We illustrate the different functions of UQ-PyL by applying it to the uncertainty analysis of the Sacramento Soil Moisture Accounting Model. We will also demonstrate that UQ-PyL can be applied to a wide range of applications.},
-  date     = {2015-11-30},
-  doi      = {10.1016/j.envsoft.2015.11.004},
-  file     = {:Wang2016 - A GUI platform for uncertainty quantification of complex dynamical models.pdf:PDF},
-  keywords = {environmental engineering},
-  piis     = {84949194235},
-  url      = {http://dx.doi.org/10.1016/j.envsoft.2015.11.004},
-}
-
-@Article{Wu2018a,
-  author   = {Xu Wu and Tomasz Kozlowski and Hadi Meidani and Koroush Shirvan},
-  title    = {Inverse uncertainty quantification using the modular {B}ayesian approach based on {G}aussian process, {Part} 1: {Theory}},
-  journal  = {Nuclear Engineering and Design},
-  year     = {2018},
-  volume   = {335},
-  pages    = {339--355},
-  abstract = {In nuclear reactor system design and safety analysis, the Best Estimate plus Uncertainty (BEPU) methodology requires that computer model output uncertainties must be quantified in order to prove that the investigated design stays within acceptance criteria. “Expert opinion” and “user self-evaluation” have been widely used to specify computer model input uncertainties in previous uncertainty, sensitivity and validation studies. Inverse Uncertainty Quantification (UQ) is the process to inversely quantify input uncertainties based on experimental data in order to more precisely quantify such ad-hoc specifications of the input uncertainty information. In this paper, we used Bayesian analysis to establish the inverse UQ formulation, with systematic and rigorously derived metamodels constructed by Gaussian Process (GP). Due to incomplete or inaccurate underlying physics, as well as numerical approximation errors, computer models always have discrepancy/bias in representing the realities, which can cause over-fitting if neglected in the inverse UQ process. The model discrepancy term is accounted for in our formulation through the “model updating equation”. We provided a detailed introduction and comparison of the full and modular Bayesian approaches for inverse UQ, as well as pointed out their limitations when extrapolated to the validation/prediction domain. Finally, we proposed an improved modular Bayesian approach that can avoid extrapolating the model discrepancy that is learnt from the inverse UQ domain to the validation/prediction domain.},
-  date     = {2018-06-19},
-  doi      = {10.1016/j.nucengdes.2018.06.004},
-  file     = {:Wu2018 - Inverse uncertainty quantification using the modular Bayesian approach based on Gaussian process, Part 1_ Theory.pdf:PDF},
-  keywords = {nuclear engineering},
-  piis     = {85048576082},
-  url      = {http://dx.doi.org/10.1016/j.nucengdes.2018.06.004},
 }
 
 @Article{Wu2018,
@@ -913,22 +739,6 @@
   url      = {http://dx.doi.org/10.1016/j.ifacol.2018.04.004},
 }
 
-@InProceedings{Yousefian2017,
-  author       = {Sajjad Yousefian and Gilles Bourque and Rory F.D. Monaghan},
-  title        = {Review of hybrid emissions prediction tools and uncertainty quantification methods for gas turbine combustion systems},
-  booktitle    = {Proceedings of the ASME Turbo Expo},
-  year         = {2017},
-  address      = {Charlotte, North Carolina, USA},
-  organization = {The American Society of Mechanical Engineers (ASME)},
-  abstract     = {There is a need for fast and reliable emissions prediction tools in the design, development and performance analysis of gas turbine combustion systems to predict emissions such as NOx, CO. Hybrid emissions prediction tools are defined as modelling approaches that (1) use computational fluid dynamics (CFD) or component modelling methods to generate flow field information, and (2) integrate them with detailed chemical kinetic modelling of emissions using chemical reactor network (CRN) techniques. This paper presents a review and comparison of hybrid emissions prediction tools and uncertainty quantification (UQ) methods for gas turbine combustion systems. In the first part of this study, CRN solvers are compared on the bases of some selected attributes which facilitate flexibility of network modelling, implementation of large chemical kinetic mechanisms and automatic construction of CRN. The second part of this study deals with UQ, which is becoming an important aspect of the development and use of computational tools in gas turbine combustion chamber design and analysis. Therefore, the use of UQ technique as part of the generalized modelling approach is important to develop a UQenabled hybrid emissions prediction tool. UQ techniques are compared on the bases of the number of evaluations and corresponding computational cost to achieve desired accuracy levels and their ability to treat deterministic models for emissions prediction as black boxes that do not require modifications. Recommendations for the development of UQenabled emissions prediction tools are made.},
-  doi          = {10.1115/GT2017-64271},
-  eventdate    = {2017-06-26/2017-06-30},
-  file         = {:Yousefian2017 - Review of hybrid emissions prediction tools and uncertainty quantification methods for gas turbine combustion systems.pdf:PDF},
-  keywords     = {mechanical engineering, review article},
-  piis         = {85030695160},
-  url          = {http://dx.doi.org/10.1115/GT2017-64271},
-}
-
 @Article{Yuzugullu2017,
   author   = {Onur Yuzugullu and Esra Erten and Irena Hajnsek},
   title    = {Estimation of rice crop height from {X-and C-Band PolSAR} by metamodel-based optimization},
@@ -944,25 +754,6 @@
   keywords = {sensors engineering, used UQLab},
   piis     = {84976511966},
   url      = {http://dx.doi.org/10.1109/JSTARS.2016.2575362},
-}
-
-@Article{Zega2018,
-  author   = {Valentina Zega and Attilio Frangi and Andrea Guercilena and Gabriele Gattere},
-  title    = {Analysis of frequency stability and thermoelastic effects for slotted tuning fork {MEMS} resonators},
-  journal  = {Sensors},
-  year     = {2018},
-  volume   = {18},
-  number   = {7},
-  abstract = {MicroElectroMechanical Systems (MEMS) resonators are attracting increasing interest because of their smaller size and better integrability as opposed to their quartz counterparts. However, thermal drift of the natural frequency of silicon structures is one of the main issues that has hindered the development of MEMS resonators. Extensive investigations have addressed both the fabrication process (e.g., introducing heavy doping of the silicon) and the mechanical design (e.g., exploiting proper orientation of the device, slots, nonlinearities). In this work, starting from experimental data published in the literature, we show that a careful design can help reduce the thermal drift even when slots are inserted in the devices in order to decrease thermoelastic losses. A custom numerical code able to predict the dynamic behavior of MEMS resonators for different materials, orientations and doping levels is coupled with an evolutionary optimization algorithm and the possibility to find an optimal mechanical design is demonstrated on a tuning-fork resonator.},
-  date     = {2018-07-04},
-  doi      = {10.3390/s18072157},
-  file     = {:Zega2018 - Analysis of frequency stability and thermoelastic effects for slotted tuning fork MEMS resonators.pdf:PDF},
-  keywords = {sensors engineering},
-  piis     = {85049736453},
-  review   = {The use of the uncertainty quantification models (see e.g., [40] - UQLab) that can
-replace the costly FEM analyses after a proper training is currently under investigation.
-Not used UQLab yet.},
-  url      = {http://dx.doi.org/10.3390/s18072157},
 }
 
 @Article{Xu2018,
@@ -991,7 +782,7 @@ Not used UQLab yet.},
   date     = {2018-06-26},
   doi      = {10.1109/JSTARS.2018.2844798},
   file     = {:Yuzugullu2018 - Assessment of paddy rice height_ sequential inversion of coherent and incoherent models.pdf:PDF},
-  keywords = {sensors engineering, used UQLab},
+  keywords = {monitoring and remote sensing, used UQLab},
   url      = {https://dx.doi.org/10.1109/JSTARS.2018.2844798},
 }
 
@@ -1024,21 +815,6 @@ Not used UQLab yet.},
   file         = {:Zhang2018 - Surrogate-based Bayesian inverse modeling of the hydrological system_ an adaptive approach considering surrogate structural error.pdf:PDF},
   keywords     = {geoscience, used UQLab},
   url          = {https://arxiv.org/abs/1807.05187},
-}
-
-@Article{Shokry2018,
-  author   = {Ahmed Shokry and Patricia Vicente and Gerard Escudero and Montserrat Pérez-Moya and Moisès Graells and Antonio Espuña},
-  title    = {Data-driven soft-sensors for online monitoring of batch processes with different initial conditions},
-  journal  = {Computers and Chemical Engineering},
-  year     = {2018},
-  volume   = {118},
-  pages    = {159--179},
-  abstract = {A soft-sensing methodology applicable to batch processes operated under changeable initial conditions is presented. These cases appear when the raw materials specifications differ from batch to batch, different production scenarios should be managed, etc. The proposal exploits the capabilities of the machine learning techniques to provide practical soft-sensing approach with minimum tuning effort in spite of the fact that the inherent dynamic behavior of batch systems are tracked through other online indirect measurements. Current data modeling techniques have been also tested within the proposed methodology to demonstrate its advantages. Two simulation case-studies and a pilot-plant case-study involving a complex batch process for wastewater treatment are used to illustrate the problem, to assess the modeling approach and to compare the modeling techniques. The results reflect a promising accuracy even when the training information is scarce, allowing significant reductions in the cost associated to batch processes monitoring and control.},
-  date     = {2018-10-04},
-  doi      = {10.1016/j.compchemeng.2018.07.014},
-  file     = {:Shokry2018 - Data-driven soft-sensors for online monitoring of batch processes with different initial conditions.pdf:PDF},
-  keywords = {chemical engineering},
-  url      = {https://doi.org/10.1016/j.compchemeng.2018.07.014},
 }
 
 @InProceedings{Miers2018,
@@ -1105,22 +881,6 @@ Not used UQLab yet.},
   file         = {:Ligeikis2018 - Assessing structural reliability at the component test stage using real-time hybrid substructuring.pdf:PDF},
   keywords     = {civil engineering, used UQLab},
   url          = {https://doi.org/10.1007/978-3-319-74793-4_11},
-}
-
-@Article{Hariri-Ardebili2018a,
-  author   = {Mohammad Amin Hariri-Ardebili},
-  title    = {Risk, {R}eliability, {R}esilience ({R}3) and beyond in dam engineering: {A} state-of-the-art review},
-  journal  = {International Journal of Disaster and Risk Reduction},
-  year     = {2018},
-  volume   = {31},
-  pages    = {806--831},
-  note     = {Date is "available online"},
-  abstract = {Dams are critical infra-structures whose their failure could leads to high economic and social consequences. For this reason, application of quantitative risk analysis has gained extensive attention in recent years. Dam safety management has become an indispensable part of all dam engineering projects worldwide. The concept of risk is heavily tied to probabilistic methods. From an engineering point of view, a clear definition of the terminologies involved in dam safety, and a comprehensive state-of-the-art review of the current literature are the starting points towards an effective risk-based approach. The first part of this paper provides a systematic review on the fundamental elements in uncertainty quantification. Then, different terminologies in risk-based dam safety are explored and their inter-connections are discussed. More than 350 papers are summarized, and several tables and conceptual plots are used for extra clarification. Since no such a paper is ever published, hopefully this can unify all the future activities and improves our understanding from probabilistic risk analysis.},
-  date     = {2018-08-01},
-  doi      = {10.1016/j.ijdrr.2018.07.024},
-  file     = {:Hariri-Ardebili2018a - Risk, Reliability, Resilience ($R^3$) and beyond in dam engineering_ a state-of-the-art review.pdf:PDF},
-  keywords = {civil engineering},
-  url      = {https://doi.org/10.1016/j.ijdrr.2018.07.024},
 }
 
 @Article{Aleksankina2018,
@@ -1210,40 +970,28 @@ We use this framework to calibrate the SP flood model by history matching a sing
   date     = {2018-10-16},
   doi      = {10.1371/journal.pone.0205607},
   file     = {:Groenquist2018 - Modeling and design of thin bending wooden bilayers.pdf:PDF},
-  keywords = {material science and engineering, used UQLab},
+  keywords = {material science and engineering, used UQLab, mechanical engineering},
   review   = {For the analysis, the Matlab-based uncertainty quantification tool UQLab was used [19]. The engineering constants EL, ER, and ET entering the model (for the plane strain case), the three swelling coefficients αL, αR, and αT, the two thicknesses h1, and h2, and the growth ring orientation φ2, were sampled using 107 MC samples. We assume a log-normal PDF for the material properties (), where a coefficient of variation (COV = σ/μ) of 10% is attributed to each property, and a Gaussian PDF for the geometrical properties () where standard deviations (σ) of 0.1 mm, 0.1 mm and 1° are attributed respectively. Exemplary, four beech bilayer configurations were analyzed (described along Results). The mean values μi (first moments of the input PDFs of i) for the material properties are taken as in Fig 1. The described input parameters were chosen in view of direct applicability in industry. The Young’s moduli, the differential swelling coefficients, and the geometry are deemed easier to record than other input parameters (i.e. shear moduli and Poisson ratios).},
   url      = {https://doi.org/10.1371/journal.pone.0205607},
 }
 
-@Article{Shahane2018,
+@Article{Shahane2019a,
   author      = {Shantanu Shahane and Narayana Aluru and Placid Ferreira and Shiv G Kapoor and Surya Pratap Vanka},
   title       = {Finite volume simulation framework for die casting with uncertainty quantification},
-  journal     = {arXiv},
-  year        = {2018},
+  journal     = {Applied Mathematical Modeling},
+  year        = {2019},
+  volume      = {74},
+  pages       = {132--150},
   abstract    = {The present paper describes the development of a novel and comprehensive computational framework to simulate solidification problems in materials processing, specifically casting processes. Heat transfer, solidification and fluid flow due to natural convection are modeled. Empirical relations are used to estimate the microstructure parameters and mechanical properties. The fractional step algorithm is modified to deal with the numerical aspects of solidification by suitably altering the coefficients in the discretized equation to simulate selectively only in the liquid and mushy zones. This brings significant computational speed up as the simulation proceeds. Complex domains are represented by unstructured hexahedral elements. The algebraic multigrid method, blended with a Krylov subspace solver is used to accelerate convergence. State of the art uncertainty quantification technique is included in the framework to incorporate the effects of stochastic variations in the input parameters. Rigorous validation is presented using published experimental results of a solidification problem.},
   date        = {2018-10-19},
+  doi         = {10.1016/j.apm.2019.04.045},
   eprint      = {1810.08572v1},
   eprintclass = {cs.NA},
   eprinttype  = {arXiv},
   file        = {online:Shahane2018 - Finite Volume Simulation Framework for Die Casting with Uncertainty Quantification.pdf:PDF},
   keywords    = {mechanical engineering, used UQLab},
-  url         = {https://arxiv.org/abs/1810.08572},
-}
-
-@Article{Razavi2018,
-  author   = {Saman Razavi and Razi Sheikholeslami and Hoshin V. Gupta and Amin Haghnegahdar},
-  title    = {{VARS-TOOL}: a toolbox for comprehensive, efficient, and robust sensitivity and uncertainty analysis},
-  journal  = {Environmental Modelling \& Software},
-  year     = {2018},
-  volume   = {112},
-  pages    = {95--107},
-  note     = {Date is "available online"},
-  abstract = {ARS-TOOL is a software toolbox for sensitivity and uncertainty analysis. Developed primarily around the “Variogram Analysis of Response Surfaces” framework, VARS-TOOL adopts a multi-method approach that enables simultaneous generation of a range of sensitivity indices, including ones based on derivative, variance, and variogram concepts, from a single sample. Other special features of VARS-TOOL include (1) novel tools for time-varying and time-aggregate sensitivity analysis of dynamical systems models, (2) highly efficient sampling techniques, such as Progressive Latin Hypercube Sampling (PLHS), that maximize robustness and rapid convergence to stable sensitivity estimates, (3) factor grouping for dealing with high-dimensional problems, (4) visualization for monitoring stability and convergence, (5) model emulation for handling model crashes, and (6) an interface that allows working with any model in any programming language and operating system. As a test bed for training and research, VARS-TOOL provides a set of mathematical test functions and the (dynamical) HBV-SASK hydrologic model.},
-  date     = {2018-10-28},
-  doi      = {10.1016/j.envsoft.2018.10.005},
-  file     = {:Razavi2018 - VARS-TOOL_ a toolbox for comprehensive, efficient, and robust sensitivity and uncertainty analysis.pdf:PDF},
-  keywords = {environmental engineering},
-  url      = {https://doi.org/10.1016/j.envsoft.2018.10.005},
+  review      = {Used UQLab to construct PCE and PCK metamodels and conduct Sobol' senstivity analysis.},
+  url         = {https://doi.org/10.1016/j.apm.2019.04.045},
 }
 
 @Article{Hart2018,
@@ -1258,19 +1006,6 @@ We use this framework to calibrate the SP flood model by history matching a sing
   file       = {online:Hart2018 - Global Sensitivity Analysis of High Dimensional Neuroscience Models_ An Example of Neurovascular Coupling.pdf:PDF},
   keywords   = {biology, used UQLab},
   url        = {https://arxiv.org/abs/1811.08498?context=q-bio},
-}
-
-@Article{Chassaing2018,
-  author   = {J.-C. Chassaing and C. T. Nitschke and A. Vincenti and P. Cinnella and D. Lucorae},
-  title    = {Advances in parametric and model-form uncertainty quantification in canonical aeroelastic systems},
-  journal  = {AreospaceLab Journal},
-  year     = {2018},
-  number   = {14},
-  abstract = {Uncertainty quantification is going to play a crucial role in the aeroelastic design and optimization of aircraft. Stochastic aeroelastic models are currently being considered to account for manufacturing tolerance in material properties, variability in flight conditions or uncertainty in the aeroelastic model itself. In this paper, some challenging issues in the development of efficient and robust stochastic solvers are reported within the framework of canonical aeroelastic systems. First, independent or correlated parametric uncertainties are propagated to compute the probability density function of the critical flutter velocity or the limit cycle oscillations in the presence of discontinuous responses. Secondly, inverse stochastic aeroelastic problems are addressed, in which experimental data are used to calibrate several stochastic aerodynamic models within a Bayesian framework. Studied configurations concern linear and non-linear pitching and plunging airfoils, and the stochastic flutter of a cantilevered straight composite wing subject to ply angle and thickness uncertainties.},
-  doi      = {10.12762/2018.AL14-07},
-  file     = {:Chassaing2018 - Advances in parametric and model-form uncertainty quantification in canonical aeroelastic systems.pdf:PDF},
-  keywords = {mechanical engineering},
-  url      = {https://doi.org/10.12762/2018.AL14-07},
 }
 
 @Article{Wang2018b,
@@ -1317,21 +1052,6 @@ We use this framework to calibrate the SP flood model by history matching a sing
   url      = {https://doi.org/10.1016/j.compchemeng.2018.10.006},
 }
 
-@Article{Banyay2018,
-  author   = {Gregory A. Banyay and Michael D. Shields and John C. Brigham},
-  title    = {Efficient global sensitivity analysis for flow-induced vibration of a nuclear reactor assembly using {K}riging surrogates},
-  journal  = {Nuclear Engineering and Design},
-  year     = {2018},
-  volume   = {341},
-  pages    = {1--15},
-  abstract = {In this work, surrogate modeling is used to support a global sensitivity analysis (GSA) for a nuclear reactor assembly as a proof-of-concept to demonstrate both the pertinence of such methods to this application as well as the significant physical insights provided by GSA. In addition to the knowledge gained relating to the system sensitivity, insight gained from the accuracy of the GSA results may be used to compare with goodness-of-fit metrics which are traditionally used to support the verification of the surrogate model. The coupled use of surrogate modeling and GSA reduces the number of full-order (i.e., standard computationally expensive finite element analysis) simulations required, substantially reducing total computational cost. This work focuses on the use of Kriging surrogates in particular, and examines the robustness of these techniques to evaluate sensitivity by considering a variety of design of experiment strategies used to create the surrogate models. Numerical experiments based upon an inverted top-hat upper internals assembly of a pressurized water reactor subjected to base motion and fluctuating lift and drag cross-flow loadings are used to evaluate the relationship between sensitivities computed from a full-order model versus those computed from a surrogate model, highlighting the effectiveness of utilizing GSA and surrogate modeling. For large sample sizes, negligible variation in the resultant sensitivities is shown with respect to the particular method by which a computational design of experiment is constructed to train the Kriging surrogates which lends credence to the stability and veracity of the results. Additionally, for the example presented herein the historical significance of the downcomer forcing function characterization is substantiated in the sense that loads from the downcomer which act indirectly on the upper internals are shown to dominate the response relative to direct-applied cross-flow loads.},
-  date     = {2018-10-26},
-  doi      = {10.1016/j.nucengdes.2018.10.013},
-  file     = {:Banyay2018 - Efficient global sensitivity analysis for flow-induced vibration of a nuclear reactor assembly using Kriging surrogates.pdf:PDF},
-  keywords = {nuclear engineering},
-  url      = {https://doi.org/10.1016/j.nucengdes.2018.10.013},
-}
-
 @Article{Dimitrov2018,
   author   = {Nikolay Dimitrov and Mark C. Kelly and Andrea Vignaroli and Jacob Berg},
   title    = {From wind to loads: wind turbine site-specific load estimation with surrogate models trained on high-fidelity load databases},
@@ -1347,38 +1067,21 @@ We use this framework to calibrate the SP flood model by history matching a sing
   url      = {https://doi.org/10.5194/wes-3-767-2018},
 }
 
-@Article{Shahane2018a,
+@Article{Shahane2019,
   author     = {Shantanu Shahane and Narayana R. Aluru and Surya Pratap Vanka},
   title      = {Uncertainty quantification in three dimensional natural convection using polynomial chaos expansion and deep neural networks},
-  journal    = {arXiv},
-  year       = {2018},
-  volume     = {In Review},
+  journal    = {International Jounral of Heat and Mass Transfer},
+  year       = {2019},
+  volume     = {139},
+  pages      = {613--631},
   abstract   = {This paper analyzes the effects of input uncertainties on the outputs of a three dimensional natural convection problem in a differentially heated cubical enclosure. Two different cases are considered for parameter uncertainty propagation and global sensitivity analysis. In case A, stochastic variation is introduced in the two non-dimensional parameters (Rayleigh and Prandtl numbers) with an assumption that the temperature boundary condition is uniform. Being a two dimensional stochastic problem, the polynomial chaos expansion (PCE) method is used as a surrogate model. Case B deals with non-uniform stochasticity in the boundary temperature. Instead of the traditional Gaussian process model with the Karhunen-Lo$\grave{e}$ve expansion, a novel approach is successfully implemented to model uncertainty in the boundary condition. The boundary is divided into multiple domains and the temperature imposed on each domain is assumed to be an independent and identically distributed (i.i.d) random variable. Deep neural networks are trained with the boundary temperatures as inputs and Nusselt number, internal temperature or velocities as outputs. The number of domains which is essentially the stochastic dimension is 4, 8, 16 or 32. Rigorous training and testing process shows that the neural network is able to approximate the outputs to a reasonable accuracy. For a high stochastic dimension like 32, it is computationally expensive to fit the PCE. This paper demonstrates a novel way of using the deep neural network as a surrogate modeling method of uncertainty quantification with the number simulations much lesser than that required for fitting the PCE thus, saving the computational cost.},
   date       = {2018-10-29},
+  doi        = {10.1016/j.ijheatmasstransfer.2019.05.014},
   eprinttype = {arXiv},
-  file       = {:Shahane2018a - Uncertainty Quantification in Three Dimensional Natural Convection using Polynomial Chaos Expansion and Deep Neural Networks.pdf:PDF},
-  url        = {https://arxiv.org/abs/1810.11934},
-}
-
-@InProceedings{Serantoni2018,
-  author    = {Eugenio Serantoni and Marcel Muster and Andreas Wieser},
-  title     = {Numerical structural identification of a cross-laminated timber slab using {3D} laserscanning},
-  booktitle = {The 9th European Workshop on Structural Health Monitoring},
-  year      = {2018},
-  address   = {Manchester, United Kingdom},
-  abstract  = {In this contribution, a method to integrate the contactless areal monitoring of a structure and the numerical identification of parameters describing its mechanical properties is presented. 3D terrestrial laserscanning (TLS) yields a dense point cloud representing the surface of the scanned objects. Scans taken from different instrument locations or at different times can be transformed into the same external coordinate system such that large objects and their geometric changes over time can be monitored.
-
-The accuracy of TLS may seem moderate compared to the one of classical surveying techniques such as tacheometry or to the one provided by embedded sensors. Indeed, the measurement of an individual point is not repeatable within different scans and it cannot be directly used for monitoring. However, the ensemble of points yields areal coverage of the monitored structures and enables the calculation of dense deformation fields. Material properties can be retrieved from the measured displacements, if the applied forces (loads and constraints) are known.
-
-The method developed herein consists in the geometrical modelling of a 3D finite element (FE) mesh out of the acquired point cloud and the subsequent automatic calculation of the material properties using an iterative least squares adjustment. Since the criterion used to identify the value of the mechanical parameters is the congruence between the deformations calculated with the FE model and the measured ones, the displacements measured with TLS are reduced to the location of the FE nodes by interpolation.
-
-As an application example, the Young's and the shear modulus of a corner supported cross-laminated-timber slab are estimated. The structure was monitored using TLS measurements taken over three epochs: at the setup, after the removal of the temporary supports, and after a load increase. The structure is composed of four smaller slabs, rigidly connected by an innovative butt joint bonding. Areal monitoring enables to model the entire deformed shape of the slab, thus it allows to determine more accurately both the bending and shear stiffness. For the analysed application case, the deviation of the predicted material parameters with respect to the nominal ones ranges between 1.9% and 12.9% for all the modelled scenarios. The accuracy of the measured vertical displacements was validated with geometric levelling.},
-  date      = {2018-07-13},
-  doi       = {10.3929/ethz-b-000299776},
-  eventdate = {2018-07-10/2018-07-13},
-  file      = {:Serantoni2018 - Numerical structural identification of a cross-laminated timber slab using 3D laserscanning.pdf:PDF},
-  keywords  = {civil engineering},
-  url       = {https://doi.org/10.3929/ethz-b-000299776},
+  file       = {:Shahane2018a - Uncertainty quantification in three dimensional natural convection using polynomial chaos expansion and deep neural networks.pdf:PDF},
+  keywords   = {mechanical engineering, used UQLab},
+  review     = {Used UQLab to construct PCE and PCK metamodels and conduct Sobol' senstivity analysis.},
+  url        = {https://doi.org/10.1016/j.ijheatmasstransfer.2019.05.014},
 }
 
 @Article{Vepsaelaeinen2019,
@@ -1395,21 +1098,6 @@ As an application example, the Young's and the shear modulus of a corner support
   url      = {https://doi.org/10.1016/j.energy.2018.12.064},
 }
 
-@Article{Juang2019,
-  author   = {C. Hsein Juang and Jie Zhang and Mengfen Shen and Jinzheng Hu},
-  title    = {Probabilistic methods for unified treatment of geotechnical and geological uncertainties in a geotechnical analysis},
-  journal  = {Engineering Geology},
-  year     = {2019},
-  volume   = {248},
-  pages    = {148--161},
-  abstract = {There are typically three types of models involved in a geotechnical analysis, i.e., the geologic model, the ground model, and the geotechnical model, each of which may be associated with uncertainty to a different extent. However, in a typical geotechnical analysis the geological uncertainty is seldom characterized and considered explicitly. In this paper, we discuss the probabilistic tools developed in the geotechnical profession for tasks such as uncertainty characterization, assessment of impact of uncertainties, uncertainty reduction, and evaluation of the value of uncertainty reduction. We postulate that the same tools may be used for a unified treatment of various types of uncertainties in a geotechnical analysis, which would necessitate the collaboration of the engineering geologists and the geotechnical engineers to comprehensively characterize these uncertainties consistently. To this end, the probabilistic tools or methods that are widely used in geotechnical engineering are examined to determine their applicability in the evaluation of geological uncertainties. Examples are provided to illustrate various concepts introduced in this paper.},
-  date     = {2018-12-14},
-  doi      = {10.1016/j.enggeo.2018.12.010},
-  file     = {:- Probabilistic methods for unified treatment of geotechnical and geological uncertainties in a geotechnical analysis.pdf:PDF},
-  keywords = {geoscience},
-  url      = {https://doi.org/10.1016/j.enggeo.2018.12.010},
-}
-
 @Article{Cheng2019,
   author   = {Kai Cheng and Zhenzhou Lu and Kaichao Zhang},
   title    = {Multivariate output global sensitivity analysis using multi-output support vector regression},
@@ -1421,18 +1109,6 @@ As an application example, the Young's and the shear modulus of a corner support
   keywords = {used UQLab, computational science and engineering},
   review   = {Used UQLab to compare the new proposed method with sparse PCE for GSA.},
   url      = {https://doi.org/10.1007/s00158-018-2184-z},
-}
-
-@Article{Fenzi2019,
-  author   = {Luca Fenzi and Wim Michiels},
-  title    = {Polynomial (chaos) approximation of maximum eigenvalue functions},
-  journal  = {Numerical Algorithms},
-  year     = {2019},
-  abstract = {This paper is concerned with polynomial approximations of the spectral abscissa function (defined by the supremum of the real parts of the eigenvalues) of a parameterized eigenvalue problem, which are closely related to polynomial chaos approximations if the parameters correspond to realizations of random variables. Unlike previous work, we highlight the major role of this function smoothness properties. Even if the eigenvalue problem matrices are analytic functions of the parameters, the spectral abscissa function may not be differentiable, and even non-Lipschitz continuous, due to multiple rightmost eigenvalues counted with multiplicity. This analysis demonstrates smoothness properties not only heavily affect the approximation errors of the Galerkin and collocation based polynomial approximations, but also the numerical errors in the evaluation of coefficients in the Galerkin approach with integration methods. A documentation of the experiments, conducted on the benchmark problems through the software Chebfun, is publicly available.},
-  doi      = {10.1007/s11075-018-00648-9},
-  file     = {:Fenzi2019 - Polynomial (chaos) approximation of maximum eigenvalue functions.pdf:PDF},
-  keywords = {computational science and engineering},
-  url      = {https://doi.org/10.1007/s11075-018-00648-9},
 }
 
 @Article{Xu2019,
@@ -1465,21 +1141,6 @@ probability density function (PDF) of the performance function. This scheme firs
   url      = {https://doi.org/10.1016/j.engstruct.2018.12.011},
 }
 
-@Article{Sawicka2018,
-  author   = {Kasia Sawicka and Gerard B. M. Heuvelink and Dennis J. J. Walvoort},
-  title    = {Spatial uncertainty propagation analysis with the {spup} {R} package},
-  journal  = {The R Journal},
-  year     = {2018},
-  volume   = {10},
-  number   = {2},
-  abstract = {Many environmental and geographical models, such as those used in land degradation, agro-ecological and climate studies, make use of spatially distributed inputs that are known imperfectly. The R package spup provides functions for examining the uncertainty propagation from input data
-and model parameters onto model outputs via the environmental model. The functions include uncertainty model specification, stochastic simulation and propagation of uncertainty using Monte Carlo (MC) techniques. Uncertain variables are described by probability distributions. Both numerical and categorical data types are handled.  The package also accommodates spatial auto-correlation within a variable and cross-correlation between variables. The MC realizations may be used as input to the environmental models written in or called from R. This article provides theoretical background and three worked examples that guide users through the application of spup
-.},
-  file     = {:Sawicka2018 - Spatial uncertainty propagation analysis with the spup R package.pdf:PDF},
-  keywords = {geoscience},
-  url      = {https://journal.r-project.org/archive/2018/RJ-2018-047/RJ-2018-047.pdf},
-}
-
 @Article{Rajabi2019,
   author   = {Mohammad Mahdi Rajabi},
   title    = {Review and comparison of two meta-model-based uncertainty propagation analysis methods in groundwater applications: polynomial chaos expansion and {Gaussian} process emulation},
@@ -1508,20 +1169,6 @@ mean, standard deviation and the entire shape and the tail of probability distri
   url      = {http://dx.doi.org/10.1109/JOE.2018.2882276},
 }
 
-@Article{Dwelle2019,
-  author   = {M. Chase Dwelle and Jongho Kim and Khachik Sargsyan and Valeriy Y. Ivanov},
-  title    = {Streamflow, stomata, and soil pits: {Sources} of inference for complex models with fast, robust uncertainty quantification},
-  journal  = {Advances in Water Resources},
-  year     = {2019},
-  volume   = {125},
-  pages    = {13--31},
-  abstract = {The scale and complexity of environmental and earth systems introduce an array of uncertainties that need to be systematically addressed. In numerical modeling, the ever-increasing complexity of representation of these systems confounds our ability to resolve relevant uncertainties. Specifically, the numerical representation of the governing processes involve many inputs and parameters that have been traditionally treated as deterministic. Considering them as uncertain introduces a large computational burden, stemming from the requirement of a prohibitive number of model simulations. Furthermore, within hydrology, most catchments are sparsely monitored, and there are limited, heterogeneous types of data available to confirm the model’s behavior. Here we present a blueprint of a general approach to uncertainty quantification for complex hydrologic models, taking advantage of recent methodological developments. We rely on polynomial chaos machinery to construct accurate surrogates that can be efficiently sampled for the ecohydrologic model tRIBS-VEGGIE to mimic its behavior with respect to a selected set of quantities of interest. The use of the Bayesian compressive sensing technique allows for fewer evaluations of the computationally expensive tRIBS-VEGGIE. The approach enables inference of model parameters using a set of observed hydrologic quantities including stream discharge, water table depth, evapotranspiration, and soil moisture from the Asu experimental catchment near Manaus, Brazil. The results demonstrate the flexibility of the framework for hydrologic inference in watersheds with sparse, irregular observations of varying accuracy. Significant computational savings imply that problems of greater computational complexity and dimension can be addressed using accurate, computationally cheap surrogates for complex hydrologic models. This will ultimately yield probabilistic representation of model behavior, robust parameter inference, and sensitivity analysis without the need for greater investment in computational resources.},
-  doi      = {10.1016/j.advwatres.2019.01.002},
-  file     = {:Dwelle2019 - Streamflow, stomata, and soil pits_ Sources of inference for complex models with fast, robust uncertainty quantification.pdf:PDF},
-  keywords = {environmental engineering},
-  url      = {https://doi.org/10.1016/j.advwatres.2019.01.002},
-}
-
 @Article{Sheng2019,
   author   = {Hao Sheng and Xiaozhe Wang},
   title    = {Probabilistic power flow using non-intrusive low-rank approximation method},
@@ -1532,31 +1179,6 @@ mean, standard deviation and the entire shape and the tail of probability distri
   file     = {:Sheng2019 - Probabilistic power flow using non-intrusive low-rank approximation method.pdf:PDF},
   keywords = {used UQLab, electrical engineering},
   url      = {https://doi.org/10.1109/TPWRS.2019.2896219},
-}
-
-@Article{Betancourt2019,
-  author   = {José Betancourt and François Bachoc and Thierry Klein and Déborah Idier and Rodrigo Pedreros and Jérémy Rohmer},
-  title    = {Gaussian process metamodeling of functional-input code for coastal flood hazard assessment},
-  journal  = {HAL},
-  year     = {2019},
-  number   = {hal-01998727},
-  abstract = {In this article we investigate the construction of metamodels when the numerical code has functional inputs. We compare diverse Gaussian process metamodeling approaches that take into account the functional structure of the data. We discuss two methods to tune the dimension of the projection when functional inputs are decomposed on a functional basis: (i) based on the error of the projection; (ii) based on the performance of the metamodel. We further propose a methodology that allows to detect the optimal projection of the input function. We apply this methodology to the real case study of coastal flooding in the peninsula of Gâvres. Results show that the approach based on the error of the projection, being the common practice nowadays, may lead to unnecessarily large projection dimensions. In contrast, the approach based on metamodel performance presents the virtue of directly pointing to the final objective of building a fast and accurate metamodel.},
-  file     = {:Betancourt2019 - Gaussian process metamodeling of functional-input code for coastal flood hazard assessment.pdf:PDF},
-  keywords = {environmental engineering},
-  url      = {https://hal.archives-ouvertes.fr/hal-01998727},
-}
-
-@InProceedings{Scheidegger2018,
-  author    = {Anna Paula Galvão Scheidegger and Amarnath Banerjee and Tábata Fernandes Pereira},
-  title     = {Uncertainty quantification in simulation models: a proposed framework and application through case study},
-  booktitle = {2018 Winter Simulation Conference},
-  year      = {2018},
-  abstract  = {Despite the great advances in modeling and simulation techniques, modelers and researchers acknowledge that models are simplified representations of reality and, hence, are subject to uncertainty and errors. Although models are inevitably uncertain, they can still be a valuable decision-support tool if the users are informed about the uncertainty in the results. The importance of model uncertainty identification and quantification becomes clear in this context, but there are numerous challenges that remain. In this work, an uncertainty analysis framework is proposed for simulation models. This framework comprises of the steps that must be performed to analyze the uncertainty in simulation models. Next, an application of the framework is discussed where entropy is used as a possible measure of input-uncertainty. By using this framework, stakeholders can be better advised regarding the applicability and uncertainty of the simulation model, which will lead to an appropriate adjustment of expectations on the model results.},
-  doi       = {10.1109/WSC.2018.8632281},
-  eventdate = {2018-12-09/2018-12-12},
-  file      = {:Scheidegger2018 - Uncertainty quantification in simulation models_ a proposed framework and application through case study.pdf:PDF},
-  keywords  = {computational science and engineering},
-  url       = {https://dx.doi.org/10.1109/WSC.2018.8632281},
 }
 
 @Article{Koohbor2019,
@@ -1589,20 +1211,6 @@ mean, standard deviation and the entire shape and the tail of probability distri
   url      = {https://doi.org/10.1016/j.compchemeng.2019.02.009},
 }
 
-@Article{Attia2019,
-  author   = {Ahmed Attia and Adrian Sandu},
-  title    = {{DATeS}: a highly extensible data assimilation testing suite v1.0},
-  journal  = {Geoscientific Model Development},
-  year     = {2019},
-  volume   = {12},
-  pages    = {629--649},
-  abstract = {A  flexible  and  highly  extensible  data  assimila- tion testing suite, named DATeS, is described in this paper. DATeS aims to offer a unified testing environment that allows researchers to compare different data assimilation method-ologies and understand their performance in various settings. The core of DATeS is implemented in Python and takes advantage of its object-oriented capabilities. The main components of the package (the numerical models, the data assimilation  algorithms,  the  linear  algebra  solvers,  and  the  time discretization routines) are independent of each other, which offers great flexibility to configure data assimilation applications. DATeS can interface easily with large third-party numerical models written in Fortran or in C, and with a plethora of external solvers.},
-  doi      = {10.5194/gmd-12-629-2019},
-  file     = {:- DATeS_ a highly extensible data assimilation testing suite v1.0.pdf:PDF},
-  keywords = {geoscience},
-  url      = {https://doi.org/10.5194/gmd-12-629-2019},
-}
-
 @Article{Dalemans2019,
   author   = {Floris Dalemans and Bart Muys and Miet Maertens},
   title    = {A framework for profitability evaluation of agroforestry‐based biofuel value chains: {An} application to pongamia in {India}},
@@ -1615,20 +1223,6 @@ mean, standard deviation and the entire shape and the tail of probability distri
   keywords = {used UQLab, energy engineering},
   review   = {Used UQLab for Monte Carlo simulation.},
   url      = {https://dx.doi.org/10.1111/gcbb.12605},
-}
-
-@Article{Gullbrand2019,
-  author   = {Jessica Gullbrand and Mark J. Luckeroth and Mark E. Sprenger and Casey Winkel},
-  title    = {Liquid cooling of compute system},
-  journal  = {Journal of Electronic Packaging},
-  year     = {2019},
-  volume   = {141},
-  number   = {1},
-  abstract = {The continued demand for increasing compute performance results in an increasing system power and power density of many computers. The increased power requires more efficient cooling solutions than traditionally used air cooling. Therefore, liquid cooling, which has traditionally been used for large data center deployments, is becoming more mainstream. Liquid cooling can be used selectively to cool the high power components or the whole compute system. In this paper, the example of a fully liquid cooled server is used to describe different ingredients needed, together with the design challenges associated with them. The liquid cooling ingredients are cooling distribution unit (CDU), fluid, manifold, quick disconnects (QDs), and cold plates. Intel is driving an initiative to accelerate liquid cooling implementation and deployment by enabling the ingredients above. The functionality of these ingredients is discussed in this paper, while cold plates are discussed in detail.},
-  doi      = {10.1115/1.4042802},
-  file     = {:Gullbrand2019 - Liquid Cooling of Compute System.pdf:PDF},
-  keywords = {mechanical engineering},
-  url      = {http://dx.doi.org/10.1115/1.4042802},
 }
 
 @Article{Papaioannou2019,
@@ -1674,18 +1268,6 @@ mean, standard deviation and the entire shape and the tail of probability distri
   keywords = {used UQLab, computational science and engineering},
   review   = {Used LAR PCE of UQLab to benchmark the proposed method of the paper.},
   url      = {https://doi.org/10.1016/j.ymssp.2019.03.032},
-}
-
-@Article{Lallechere2019,
-  author   = {Sébastien Lalléchère and Carlo F. M. Carobbi and Luk R. Arnaut},
-  title    = {Review of uncertainty quantification of measurement and computational modeling in {EMC} {Part II}: {Computational} uncertainty},
-  journal  = {IEEE Transactions on Electromagnetic Compatibility},
-  year     = {2019},
-  abstract = {In Part I of this two-part contribution on uncertainty quantification (UQ) in electromagnetic compatibility and electromagnetic interference, the current status of international standards relating to measurement uncertainty is reviewed. Here in Part II, a selection of recent developments in analytical and computational modeling of uncertainty and empirical UQ is reviewed.},
-  doi      = {10.1109/TEMC.2019.2904999},
-  file     = {:Lallechere2019 - Review of uncertainty quantification of measurement and computational modeling in EMC Part II_ Computational uncertainty.pdf:PDF},
-  keywords = {electrical engineering},
-  url      = {https://doi.org/10.1109/TEMC.2019.2904999},
 }
 
 @Article{Tan2019,
@@ -1773,61 +1355,6 @@ mean, standard deviation and the entire shape and the tail of probability distri
   url          = {https://dx.doi.org/10.23919/EETA.2019.8804593},
 }
 
-@Article{Khazaie2019,
-  author   = {Shahram Khazaie and Xun Wang and Dimitri Komatitsch and Pierre Sagaut},
-  title    = {Uncertainty quantification for acoustic wave propagation in a shallow water environment},
-  journal  = {Wave Motion},
-  year     = {2019},
-  volume   = {91},
-  pages    = {1--14},
-  abstract = {Sound wave propagation in a shallow water environment is complex due to e.g. the uncertainties of sound speed profile being inhomogeneous and imprecisely measured, the bottom reflections, etc. The propagation and influence of several uncertainty parameters are quantified in this paper. A four-layer model, which can approximately represent a wide range of shallow water environments, is considered; six parameters representing sound speed profile and water depth are considered as random variables. We investigate how the wave field (pressure) in this model is influenced by these uncertainties. For this purpose, the sound field is computed for different realizations of the random variables, when the medium is excited with sources whose frequencies are appropriate, for example, for marine seismic exploration applications. Since classical Monte Carlo methods require a huge sample size to converge, we use three surrogate modeling techniques (Kriging, Polynomial Chaos, and Polynomial Chaos-based Kriging). The proposed methods require much smaller sample sizes, which makes the uncertainty quantification (UQ) possible. Wavelength-to-depth ratio () is introduced as the key parameter that defines the degree of interaction (reflection and transmission) of the sound waves with the boundaries of the shallow water waveguide. The results show that for small and large values of , the wave field is more sensitive to the variations of the water depth and the velocity of the bottom layer, respectively. The robustness (precision) of the surrogate models is shown to decrease for lower values of. The proposed UQ methodology can be used for more complicated underwater environments; it is even more advantageous because it can efficiently deal with a large number of model uncertainty parameters and identify the most influential ones.},
-  doi      = {10.1016/j.wavemoti.2019.102390},
-  file     = {:Khazaie2019 - Uncertainty quantification for acoustic wave propagation in a shallow water environment.pdf:PDF},
-  keywords = {mechanical engineering},
-  url      = {https://doi.org/10.1016/j.wavemoti.2019.102390},
-}
-
-@Article{Naik2019,
-  author   = {Pratik Naik and Piyush Pandita and Soroush Aramideh and Ilias Bilionis and Arezoo M. Ardekani},
-  title    = {Bayesian model calibration and optimization of surfactant-polymerflooding},
-  journal  = {Computational Geosciences},
-  year     = {2019},
-  pages    = {1--16},
-  abstract = {The physical models governing surfactant-polymer (SP) flooding process are subject to parametric uncertainties, accuratequantification of which is crucial for improved decision making. Moreover, history matching of SP flooding is an ill-posed problem, typically characterized by a multimodal posterior distribution of these model parameters. This paperpresents a systematic approach for Bayesian history matching and uncertainty quantification in the model calibration stageof SP flooding using coreflood experimental data. The approach is as follows. First, we construct a surrogate of thecomputationally expensive physics-based model using a polynomial chaos expansion (PCE-proxy). Second, we formulate aBayesian calibration problem for inferring the model parameters from a single coreflood experiment that measures pressuredrop and oilcut profiles. Third, we solve the Bayesian calibration problem by sampling directly from the posterior usingMarkov chain Monte Carlo (MCMC). We validate the calibrated parameters by successfully predicting the result of twoother coreflood experiments. Then, we extend this framework to stochastic multiobjective optimization of injection slug sizedesign under uncertainties in model parameters (captured by the posterior of Bayesian calibration problem) and oil price(modeled as a geometric random walk with constant drift and volatility). To identify the Pareto frontier of the stochasticmultiobjective optimization problem, we employ a variant of Bayesian global optimization (BGO), a class of algorithmscapable of optimizing black-box, gradient-free, computationally expensive functions. In particular, we use the extendedexpected improvement over the dominated hypervolume to sequentially select simulations that seek to reveal the Paretofrontier. An addendum of the implemented BGO is that it quantifies the epistemic uncertainty about the Pareto frontier asinduced by the limited number of simulations used to construct it.},
-  doi      = {10.1007/s10596-019-09858-z},
-  file     = {:Naik2019 - Bayesian model calibration and optimization of surfactant-polymerflooding.pdf:PDF},
-  keywords = {geoscience},
-  review   = {Used UQLab to create a PCE-proxy.},
-  url      = {https://doi.org/10.1007/s10596-019-09858-z},
-}
-
-@MastersThesis{Fuhg2019,
-  author   = {J N. Fuhg},
-  title    = {Adaptive surrogate models for parametric studies},
-  school   = {Leibniz Universität Hannover},
-  year     = {2019},
-  type     = {mathesis},
-  address  = {Germany},
-  abstract = {The computational effort for the evaluation of numerical simulations based on e.g. the finite-element method is high. Metamodels can be utilized to create a low-cost alternative. However the number of required samples for the creation of a sufficient metamodel should be kept low, which can be achieved by using adaptive sampling techniques. In this Master thesis adaptive sampling techniques are investigated for their use in creating metamodels with the Kriging technique, which interpolates values by a Gaussian process governed by prior covariances. The Kriging framework with extension to multifidelity problems is presented and utilized to compare adaptive sampling techniques found in the literature for benchmark problems as well as applications for contact mechanics. This thesis offers the first comprehensive comparison of a large spectrum of adaptive techniques for the Kriging framework. Furthermore a multitude of adaptive techniques is introduced to multifidelity Kriging as well as well as to a Kriging model with reduced hyperparameter dimension called partial least squares Kriging. In addition, an innovative adaptive scheme for binary classification is presented and tested for identifying chaotic motion of a Duffing's type oscillator.},
-  file     = {:Fuhg2019 - Adaptive surrogate models for parametric studies.pdf:PDF},
-  keywords = {mechanical engineering},
-  url      = {https://arxiv.org/abs/1905.05345},
-}
-
-@Article{Guo2019,
-  author   = {Xiangfeng Guo and Daniel Dias and Qiujing Pan},
-  title    = {Probabilistic stability analysis of an embankment dam considering soil spatial variability},
-  journal  = {Computers and Geotechnics},
-  year     = {2019},
-  volume   = {113},
-  pages    = {1--12},
-  abstract = {A probabilistic stability analysis of an embankment dam taking into account soil spatial variabilities is presented in this paper. The effective cohesion and friction angle of the backfill are modelled as two anisotropic cross-correlated lognormal random fields by using the Karhunen–Loève Expansion. The probabilistic analyses are performed by a meta-modelling technique SPCE/GSA which combines the Sparse Polynomial Chaos Expansion (SPCE) and the Global Sensitivity Analysis (GSA). This technique is targeted to deal with high dimensional stochastic problems and can provide a variety of interesting results in terms of probability density function (PDF) and statistical moments of the model response, failure probability and sensitivity index of each input variable. Concerning the deterministic calculations, two models (limit equilibrium and finite difference) are created and compared in a probabilistic framework. The influences of the soil spatial variability and the cross-correlation between the shear strength parameters on the reliability analysis results are investigated.},
-  doi      = {10.1016/j.compgeo.2019.103093},
-  file     = {:Guo2019 - Probabilistic stability analysis of an embankment dam considering soil spatial variability.pdf:PDF},
-  keywords = {civil engineering},
-  url      = {https://doi.org/10.1016/j.compgeo.2019.103093},
-}
-
 @Article{Al2019,
   author   = {Resul Al and Chitta Ranjan Behera and Alexandr Zubov and Krist V.Gernaey and GürkanSin},
   title    = {Meta-modeling based efficient global sensitivity analysis for wastewater treatment plants – An application to the {BSM2} model},
@@ -1841,20 +1368,6 @@ mean, standard deviation and the entire shape and the tail of probability distri
   keywords = {used UQLab, chemical engineering},
   review   = {Used UQLab to create a PCE metamodels.},
   url      = {https://doi.org/10.1016/j.compchemeng.2019.05.015},
-}
-
-@Article{Zhou2019a,
-  author   = {Yicheng Zhou and Zhenzhou Lu and Kai Cheng and Chunyan Ling},
-  title    = {An efficient and robust adaptive sampling method for polynomial chaos expansion in sparse {Bayesian} learning framework},
-  journal  = {Computer Methods in Applied Mechanics and Engineering},
-  year     = {2019},
-  volume   = {352},
-  pages    = {654--674},
-  abstract = {Sparse  polynomial  chaos  expansion  has  been  widely  used  to  tackle  problems  of  function  approximation  in  the  field  ofuncertain  quantification.  The  accuracy  of  PCE  depends  on  how  to  construct  the  experimental  design.  Therefore,  adaptivesampling  methods  of  designs  of  experiment  are  raised.  Classic  designs  of  experiment  for  PCE  are  based  on  least-squareminimization techniques, where the design space is only defined by the inputs without involving the responses of the system.To overcome this limitation, a novel adaptive sampling method is introduced in sparse Bayesian learning framework. The designpoint is enriched sequentially by maximizing a generalized expectation of loss function criterion which allows an effective useof all the information available, on which two adaptive strategies are derived to get a balance between the global explorationand  the  local  exposition  via  the  error  information  from  the  previous  iteration.  The  numerical  results  show  that  the  proposedmethod is superior to classic design of experiment in terms of efficiency and robustness.},
-  doi      = {10.1016/j.cma.2019.04.046},
-  file     = {:Zhou2019a - An efficient and robust adaptive sampling method for polynomial chaos expansion in sparse Bayesian learning framework.pdf:PDF},
-  keywords = {computational science and engineering},
-  url      = {https://doi.org/10.1016/j.cma.2019.04.046},
 }
 
 @MastersThesis{Ligeikis2019,
@@ -1921,21 +1434,6 @@ The application of a Bayesian framework for optimizing the HNP performance in a 
   keywords = {used UQLab, chemical engineering},
   review   = {Used Sobol' (PCE-based) and Cotter sensitivity indices.},
   url      = {https://doi.org/10.2118/195438-MS},
-}
-
-@InProceedings{Groen2019,
-  author    = {Derek Groen and Robin A. Richardson and David W. Wright and Vytautas Jancauskas and Robert Sinclair and Paul Karlshoefer and Maxime Vassaux and Hamid Arabnejad and Tomasz Piontek and Piotr Kopta and Bartosz Bosak and Jalal Lakhlili and Olivier Hoenen and Diana Suleimenova and Wouter Edeling and Daan Crommelin and Anna Nikishova and Peter V. Coveney},
-  title     = {Introducing {VECMAtk} - Verification,Validation and Uncertainty Quantification for Multiscale and {HPC} Simulations},
-  booktitle = {19th International Conference on Computational Science – ICCS 2019},
-  year      = {2019},
-  editor    = {João M. F. Rodrigues and Pedro J. S. Cardoso and Jânio Monteiro and Roberto Lam and Valeria V. Krzhizhanovskaya and Michael H. Lees and Jack J. Dongarra and Peter M. A. Sloot},
-  address   = {Faro, Portugal},
-  abstract  = {Multiscale simulations are an essential computational method in a range of research disciplines, and provide unprecedented levels of scientific insight at a tractable cost in terms of effort and compute resources. To provide this, we need such simulations to produce results that are both robust and actionable. The VECMA toolkit (VECMAtk), which is officially released in conjunction with the present paper, establishes a platform to achieve this by exposing patterns for verification, validation and uncertainty quantification (VVUQ). These patterns can be combined to capture complex scenarios, applied to applications in disparate domains, and used to run multiscale simulations on any desktop, cluster or supercomputing platform.},
-  doi       = {10.1007/978-3-030-22747-0_36},
-  eventdate = {2019-06-12/2019-06-14},
-  file      = {:Groen2019 - Introducing VECMAtk - Verification,Validation and Uncertainty Quantification for Multiscale and HPC Simulations.pdf:PDF},
-  keywords  = {computational science and engineering},
-  url       = {https://doi.org/10.1007/978-3-030-22747-0_36},
 }
 
 @InProceedings{Gorniak2019,
@@ -2041,17 +1539,6 @@ in a flexible way by using common programming languages for fast prototyping (Py
   keywords = {used UQLab, geoscience},
   review   = {Used Sparse PCE in UQLab.},
   url      = {https://doi.org/10.1186/s40645-019-0294-x},
-}
-
-@Article{Edler2019,
-  author   = {Philipp Edler and Steffen Freitag and Katharina Kremer and Guenther Meschke},
-  title    = {Optimization Approaches for the Numerical Design of Structures under Consideration of Polymorphic Uncertain Data},
-  journal  = {Journal of Risk and Uncertainty in Engineering Systems Part B: Mechanical Engineering},
-  year     = {2019},
-  doi      = {10.1115/1.4044153},
-  file     = {:- Optimization Approaches for the Numerical Design of Structures under Consideration of Polymorphic Uncertain Data.pdf:PDF},
-  keywords = {civil engineering},
-  url      = {https://doi.org/10.1115/1.4044153},
 }
 
 @InProceedings{Houret2019,
@@ -2174,20 +1661,6 @@ rithm, namely Gaussian process regression, is used to approximate the high‐dim
   url      = {https://doi.org/10.1016/j.net.2019.07.023},
 }
 
-@PhdThesis{Du2019,
-  author   = {Xiaosong Du},
-  title    = {Efficient uncertainty propagation for model-assisted probability of detection and sensitivity analysis via metamodeling and multifidelity methods},
-  school   = {Iowa State University},
-  year     = {2019},
-  type     = {phdthesis},
-  address  = {Ames, Iowa},
-  abstract = {Physics-based simulation models are important to the decision-making process in the design of modern engineered systems. The key challenges of using accurate predictive simulations in this process are (1) time-consuming model evaluations, (2) a large number of parameters, (3) often complex and highly coupled systems, and (4) conventional modeling and optimization techniques typically require a large amount of model evaluations. The research objective of this work is to accelerate the process of UP and optimum design under uncertainty when the high-delity computational budget is limited. In particular, the objective is to create and evaluate new metamodeling and multidelity methods that enable the solution of problems that cannot be addressed with the current state-of-the-art methods. The scope of the work is limited to nondestructive testing (NDT) systems and aerodynamic surfaces. In this work, the least-angle regression (LARS)-based polynomial chaos expansions (PCE), polynomial chaos-based Kriging (PCKriging) metamodeling, Cokriging and the proposed polynomial chaos-based Cokriging (PC-Cokriging) multidelity method are used to enable the fast uncertainty propagation (UP) for reliability and sensitivity analysis of NDT systems for the rst time. In addition, the manifold mapping (MM) multidelity metamodeling method was implemented for ecient aerodynamic forward/inverse shape optimization for the rst time. Lastly, utility theory was introduced for aerodynamic optimum shape design under uncertainty. The results of several numerical examples show that the aforementioned metamodeling and multidelity methods proposed in this work for the reliability and sensitivity analysis of NDT systems outperformed the current state-of-the-art Kriging and ordinary least-squares (OLS)-based PCE by reducing the high-delity (HF) training data from one to two orders of magnitude. In particular, the new and unique PC-Cokriging multidelity method reduced the cost by up to two orders of magnitude in the NDT benchmark cases. Furthermore, the proposed PC-Cokriging method is shown to be robust in terms of the user-specied detection thresholds. For the aerodynamic shape design, the MM-based aerodynamic local optimization algorithm alleviated the computational cost of direct HF model-based optimization by up to one order of magnitude. Moreover, utility theory was shown to yield ecient decision making for aerodynamic design under uncertainty without using weighted-sum method and estimating statistics of the objective function.},
-  file     = {:Du2019 - Efficient uncertainty propagation for model-assisted probability of detectionand sensitivity analysis via metamodeling and multifidelity methods.pdf:PDF},
-  keywords = {aerospace engineering},
-  review   = {Cite many UQLab user manuals but never explicitly stated that UQLab was used.},
-  url      = {https://lib.dr.iastate.edu/etd/17007/},
-}
-
 @Article{Paulson2019,
   author   = {Joel A. Paulson and Marc Martin-Casas and Ali Mesbah},
   title    = {Fast uncertainty quantification for dynamic flux balance analysis using non-smooth polynomial chaos expansions},
@@ -2218,35 +1691,6 @@ rithm, namely Gaussian process regression, is used to approximate the high‐dim
   url      = {https://doi.org/10.1108/EC-12-2018-0595},
 }
 
-@Article{Du2019a,
-  author   = {Xiaosong Du and Leifur Leifsson},
-  title    = {Multifidelity model-assisted probability of detection via {Cokriging}},
-  journal  = {NDT and E International},
-  year     = {2019},
-  volume   = {108},
-  abstract = {This work introduces multifidelity metamodeling for reliability analysis of nondestructive testing (NDT) systems. Specifically, the Cokriging metamodel is utilized to accelerate the uncertainty propagation within model-assisted probability of detection (MAPOD) analysis of ultrasonic testing (UT) systems. The Cokriging multifidelity metamodel fuses a limited amount of data obtained from high-fidelity (HF) physics-based UT models, which are accurate but time-consuming to evaluate, with a conservative to large amount of data from low-fidelity (LF) physics-based UT models, which are less accurate but faster to evaluate. The resulting Cokriging metamodel is fast to evaluate and yields an accurate estimate of the output of the HF model. The proposed approach is demonstrated on three benchmark UT MAPOD cases involving spherically-void and pill-box shaped defects in flat aluminum plates using planar and focused transducers. The results show that a two-level Cokriging metamodel is capable of yielding estimations of the HF model that are globally accurate within 1% of the standard deviation of the testing points. Furthermore, the result show that the Cokriging metamodeling approach needs around one order of magnitude fewer training data points when compared to the current state-of-the-art approaches that rely on metamodels constructed with Kriging.},
-  doi      = {10.1016/j.ndteint.2019.102156},
-  file     = {:Du2019a - Multifidelity model-assisted probability of detection via Cokriging.pdf:PDF},
-  keywords = {monitoring},
-  review   = {The article cited Kriging user manual, but not sure if UQLab was actually used.},
-  url      = {https://doi.org/10.1016/j.ndteint.2019.102156},
-}
-
-@MastersThesis{Noe2019,
-  author   = {Noe, III, Norman Edward},
-  title    = {Reliability Assessment of Alternate Path Method for Structural Steel Connections},
-  school   = {The Ohio State University},
-  year     = {2019},
-  type     = {mathesis},
-  address  = {Columbus, Ohio},
-  abstract = {Progressive collapse is a failure mechanism that occurs when a primary structural member fails, resulting in a propagation of failure through the adjoining structural members. The resistance method known as Alternate Path Method (APM) outlined by the UFC 04-23 (2013) is implemented to resist the progressive collapse failure. Steel moment frames are used to redistribute the load after a column is notionally removed. This study analyzes connections known as SidePlate, Welded Unreinforced Flanges with Welded Webs (WUF-W), and Reduced Beam Section (RBS), in terms of their ability to enhance the progressive collapse performance of a steel moment frame building using reliability analysis.
-In this research, RAM Structural Systems (2018) is used to design the superstructure of a mock-up structure using ASCE 7-16 (2016) and AISC 15th ed. (2018) recommendations. The mock-up structure represents a building design that would be produced in the practicing structural engineering field. The structural model is transferred to SAP2000 (2018) to perform a nonlinear dynamic analysis for APM using the guidance from UFC (2013). A newly developed tool is introduced to automate the process of APM in SAP2000. The tool is capable of accurately performing a column removal scenario for practicing engineers.
-The automated process is transferred to Matlab (2012) to perform a simulation-based reliability analyses. The performance of the steel moment frame connections is demonstrated by producing the probability of structural failure at different column removal locations. The reliability of each steel moment frame connections is calculated using a new state-of-the-art method called ESC adaptive kriging technique. Fragility curves are developed with respect to the total floor live load to provide practicing engineers with information on the optimal steel moment frame connection to select given a specified floor live load. The overall process is clearly displayed to show proof of concept and ease of replicability for future endeavors.},
-  file     = {:Noe2019 - Reliability Assessment of Alternate Path Method for Structural Steel Connections.pdf:PDF},
-  keywords = {civil engineering},
-  url      = {http://rave.ohiolink.edu/etdc/view?acc_num=osu1546559048564245},
-}
-
 @InProceedings{Gorniak2019b,
   author    = {Piotr Górniak},
   title     = {The Intrusive {PCE}-Based Method for Uncertainty Calculation in Ray-Tracing Analysis of {5G} {EM} Wave Propagation},
@@ -2257,36 +1701,6 @@ The automated process is transferred to Matlab (2012) to perform a simulation-ba
   file      = {:2019 - The Intrusive PCE-Based Method for Uncertainty Calculation in Ray-Tracing Analysis of 5G EM Wave Propagation.pdf:PDF},
   keywords  = {electrical engineering, used UQLab},
   url       = {http://www.multimedia.edu.pl/?page=publication&section=The-Intrusive-PCE-Based-Method-for-Uncertainty-Calculation-in-Ray-Tracing-Analysis-of-5G-EM-Wave-Propagation},
-}
-
-@InProceedings{Sudret2019,
-  author       = {Sudret, Bruno and Lataniotis, Christos and L{\"u}then, Nora and Marelli, Stefano and Torre, Emiliano},
-  title        = {Surrogate modelling meets machine learning},
-  booktitle    = {3rd International Conference on Uncertainty Quantification in Computational Sciences and Engineering (UNCECOMP 2019)},
-  year         = {2019},
-  organization = {ETH Zurich, Chair of Risk, Safety and Uncertainty Quantification},
-  url          = {https://www.research-collection.ethz.ch/handle/20.500.11850/359596},
-}
-
-@InProceedings{Galimshina2019,
-  author       = {Galimshina, A and Hollberg, A and Moustapha, M and Sudret, B and Favre, D and Padey, P and Lasvaux, S and Habert, G},
-  title        = {Probabilistic {LCA} and {LCC} to identify robust and reliable renovation strategies},
-  booktitle    = {IOP Conference Series: Earth and Environmental Science},
-  year         = {2019},
-  volume       = {323},
-  number       = {1},
-  pages        = {012058},
-  organization = {IOP Publishing},
-}
-
-@Article{Denimal2019,
-  author    = {Denimal, E and Sinou, J-J and Nacivet, S},
-  title     = {Influence of structural modifications of automotive brake systems for squeal events with kriging meta-modelling method},
-  journal   = {Journal of Sound and Vibration},
-  year      = {2019},
-  pages     = {114938},
-  keywords  = {mechanical engineering},
-  publisher = {Elsevier},
 }
 
 @MastersThesis{Trevisi2019,
@@ -2325,23 +1739,6 @@ The automated process is transferred to Matlab (2012) to perform a simulation-ba
   url       = {https://doi.org/10.1126/sciadv.aax1311},
 }
 
-@Article{Wagner2019,
-  author  = {Wagner, P-R and Fahrni, Reto and Klippel, Michael and Frangi, Andrea and Sudret, B},
-  title   = {Heat transfer models for fire insulation panels: {Bayesian} calibration and sensitivity analysis},
-  journal = {arXiv},
-  year    = {2019},
-  url     = {https://arxiv.org/abs/1909.07060},
-}
-
-@Article{Feinberg2019,
-  author  = {Feinberg, Aryeh and Maliki, Moustapha and Stenke, Andrea and Sudret, Bruno and Peter, Thomas and Winkel, Lenny HE},
-  title   = {Mapping the drivers of uncertainty in atmospheric selenium deposition with global sensitivity analysis},
-  journal = {Atmospheric Chemistry and Physics},
-  year    = {2019},
-  doi     = {10.5194/acp-2019-787},
-  url     = {https://doi.org/10.5194/acp-2019-787},
-}
-
 @InProceedings{Houret2019a,
   author        = {Houret, T and Besnier, P and Vauchamp, S and Pouliguen, P},
   title         = {Combining {Kriging} and controlled stratification to identify extreme levels of electromagnetic interference},
@@ -2354,14 +1751,6 @@ The automated process is transferred to Matlab (2012) to perform a simulation-ba
   file          = {:Houret2019a - Combining Kriging and controlled stratification to identify extreme levels of electromagnetic interference.pdf:PDF},
   keywords      = {Used UQLab, electrical engineering},
   url           = {https://www.researchgate.net/publication/335789611_Combining_Kriging_and_Controlled_Stratification_to_Identify_Extreme_Levels_of_Electromagnetic_Interference},
-}
-
-@Article{Slot2019,
-  author  = {Slot, R and S{\o}rensen, J and Sudret, B and Svenningsen, L and Th{\o}gersen, M},
-  title   = {Surrogate model uncertainty in wind turbine reliability assessment},
-  journal = {HAL},
-  year    = {2019},
-  url     = {https://hal.archives-ouvertes.fr/hal-02294637/},
 }
 
 @InProceedings{Nesterova2019,
@@ -2390,21 +1779,6 @@ The automated process is transferred to Matlab (2012) to perform a simulation-ba
   keywords  = {civil engineering, used UQLab},
   review    = {used UQLab to create PCE metamodel.},
   url       = {https://books.google.ch/books?hl=en&lr=&id=nSysDwAAQBAJ&oi=fnd&pg=PA80&ots=a8ZaFbplk-&sig=1311sI2ka_xJ01LkqW1J1L3WVF8&redir_esc=y#v=onepage&q&f=false},
-}
-
-@Article{Dalledonne2019,
-  author   = {Guilherme Luiz Dalledonne and Rebekka Kopmann and Thomas Brudy-Zippelius},
-  title    = {Uncertainty quantification of floodplain friction in hydrodynamic models},
-  journal  = {Hydrology and Earth System Sciences},
-  year     = {2019},
-  volume   = {23},
-  number   = {8},
-  pages    = {3373-3385},
-  abstract = {This study proposes a framework to estimate the uncertainty of hydrodynamic models on floodplains. The traditional floodplain resistance formula of Pasche (1984) (based on Lindner, 1982) used for river modelling as well as the approaches of Baptist et al. (2007), Järvelä (2004), and Battiato and Rubol (2014) was considered for carrying out an uncertainty quantification (UQ). The analysis was performed by means of three different methods: traditional Monte Carlo (MC), first-order second-moment (FOSM) and metamodelling. Using a two-dimensional hydrodynamic model, a 10 km reach of the River Rhine was simulated. The model was calibrated with water level measurements under steady flow conditions and then the analysis was carried out based on flow velocity results. The compared floodplain friction formulae produced qualitatively similar results, in which uncertainties in flow velocity were most significant on the floodplains. Among the tested resistance formulae the approach from Järvelä (2004) presented on average the smallest prediction intervals, i.e. the smallest variance. It is important to keep in mind that UQ results are not only dependent on the defined input parameter deviations, but also on the number of parameters considered in the analysis. In that sense, the approach from Battiato and Rubol (2014) is still attractive for it reduces the current analysis to a single parameter, the canopy permeability. The three UQ methods compared gave similar results, which means that FOSM is the less expensive one. Nevertheless it should be used with caution as it is a first-order method (linear approximation). In studies involving dominant non-linear processes, one is advised to carry out further comparisons.},
-  doi      = {10.5194/hess-23-3373-2019},
-  file     = {:Dalledonne2019 - Uncertainty quantification of floodplain friction in hydrodynamic models.pdf:PDF},
-  keywords = {geoscience},
-  url      = {https://doi.org/10.5194/hess-23-3373-2019},
 }
 
 @Comment{jabref-meta: databaseType:bibtex;}
