@@ -20,7 +20,7 @@ SUBJECTS_DICT = [
      "splitgroup": True
      },
     {"name": "geosciences and environmental engineering",
-     "members": ["geoscience", "geomechanics", "environmental engineering"],
+     "members": ["geoscience", "geomechanics", "environmental engineering", "geology"],
      "splitgroup": False
     }
     ]
