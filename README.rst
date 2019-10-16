@@ -36,7 +36,8 @@ The utility requires the following:
 
 - the BibTeX file (containing only the UQLab external citations)
 - the html list template file (included as ``./templates/bib_list.html``)
-- the html page template file (included as ``./templates/html_tpl.html``)
+- the html page template file (included as ``./templates/html_tpl.html``),
+  this also includes the style for HTML elements.
 
 To show the help of the utility, type::
    
