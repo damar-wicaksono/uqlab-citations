@@ -10,7 +10,7 @@ from .constants import SUBJECTS_DICT
 
 
 @click.command()
-@click.argument("bibtex", type=click.File("rt"))
+@click.argument("bibtex", type=click.File("rt", encoding="utf-8"))
 @click.option(
     "--html_tpl",
     default="./html_tpl.html",

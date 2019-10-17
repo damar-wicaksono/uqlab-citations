@@ -77,5 +77,5 @@ def write_html(biblist_entries: list,
     output = html_tpl.render(citations_list=html_per_subject)
 
     # Write down the full HTML in the output file
-    with open(output_filename, "wt") as output_file:
+    with open(output_filename, "wt", encoding="utf-8") as output_file:
         output_file.write(output)
