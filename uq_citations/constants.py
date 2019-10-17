@@ -1,3 +1,6 @@
+# -*- coding: utf-8 -*-
+"""Module with constants, a dictionary of scientific subjects.
+"""
 SUBJECTS_DICT = [
     {"name": "life sciences",
      "members": ["biology",
@@ -20,7 +23,10 @@ SUBJECTS_DICT = [
      "splitgroup": True
      },
     {"name": "geosciences and environmental engineering",
-     "members": ["geoscience", "geomechanics", "environmental engineering", "geology"],
+     "members": ["geoscience",
+                 "geomechanics",
+                 "environmental engineering",
+                 "geology"],
      "splitgroup": False
-    }
+     }
     ]
