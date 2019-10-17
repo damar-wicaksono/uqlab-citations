@@ -55,9 +55,11 @@ def write_html(biblist_entries, subjects, html_tpl, html_list, output_filename):
     """Write the list of citations into an HTML file using templates."""
     
     # Create a list of citations group by subjects
-    html_per_subject = []
-    for subject in subjects:
-        html_per_subject.append(create_html_per_subject(biblist_entries, html_list, subject))
+    html_per_subject = list(
+        map(
+            lambda subject: create_html_per_subject(
+                biblist_entries, html_list, subject),
+            subjects))
     html_per_subject = "\n".join(html_per_subject)
     
     # Read the html template file
