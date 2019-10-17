@@ -10,6 +10,17 @@ The project contains command line utilities to convert the list of citations sto
 into an HTML page (as shown in the UQLab `publications page`_ 
 or a short PDF report with some numbers and figures.
 
+
+Requirements
+------------
+
+``uq_citations`` was developed and tested using Anaconda Python distribution ().
+Additional required packages are:
+
+- ``bibtexparser`` for parsing BibTeX file
+- ``python-dateutil`` for treatment of date
+- ``jinja2`` for templating
+
 Installation
 ------------
 
@@ -26,7 +37,6 @@ Successful installation will make the following command line utilities available
 
 - ``uq_citations_bibtex2html``
 - ``uq_citations_bibtex2pdf``
-
 
 BibTeX2HTML
 -----------
