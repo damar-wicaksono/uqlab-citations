@@ -21,6 +21,12 @@ Additional required packages are:
 - ``python-dateutil`` for treatment of date
 - ``jinja2`` for templating
 
+A configuration file to recreate the environment used during the development is available
+in ``environment.yml``.
+To recreate the environment::
+
+   conda env create -f environment.yml
+
 Installation
 ------------
 
