@@ -1,0 +1,75 @@
+%*******************************************************************************
+% Minute/Memorandum/Short Report Template - RSUQ / ETHZ
+% This template is based on ETH minute
+%
+\documentclass[11pt]{article}
+
+\input{ethminutes-config}
+
+
+\selectlanguage{english}
+
+%
+\graphicspath{{./},{./figures/}}
+\renewcommand{\baselinestretch}{1.3}
+
+%********************
+% Document properties
+%******************** 
+\RefDocument{ \VAR{report.title} }
+\Date{ \VAR{report.date} }
+\Redacteur{ \VAR{report.author} }     
+\TitleReport{ \VAR{report.title} }
+\DateDiffusion{ \VAR{report.release} }
+\From{ \VAR{report.author} }
+\To{ \VAR{report.to} }
+\CC{ \VAR{report.cc} }
+
+%**************
+% Main document
+%**************
+\begin{document}
+
+%====================
+% Put the template on
+%====================
+\Header
+\Footer 
+\FrontPage
+
+%=================
+\section*{Summary}
+%=================
+
+As of \VAR{report.date}, 
+a search in the Google Scholar database for articles citing \uqlab~---be they in journals,
+conference proceedings, book series, or theses---results in $\VAR{ citations.total }$ hits of external citations.
+These external citations \emph{explicitly used} \uqlab{} in their research.
+
+\begin{table}[!ht]
+    \centering
+    \caption{\uqlab~domain of applications based on citing articles.}
+    \label{tab:citing_articles} 
+    \begin{tabularx}{0.75\textwidth}{cllX}\toprule
+      \textbf{No.} & \textbf{Subject} & \textbf{Count} & \textbf{Citing Articles}\\\midrule        
+        \BLOCK{ for row in citations.subjects }
+        \VAR{loop.index} & \VAR{row.subject} & \VAR{row.count} & \VAR{row.citations} \\ 
+        \BLOCK{ endfor }
+    \bottomrule
+  \end{tabularx}
+\end{table}
+
+
+\begin{figure}[!ht]
+  \centering
+  \includegraphics[width=0.8\textwidth]{citations_by_year.png}
+  \caption{The number of publications citing \uqlab{} by year (total $\VAR{ citations.total }$).}
+  \label{fig:citing}
+\end{figure}
+
+
+\newpage
+\printbibliography
+
+\label{end}
+\end{document}

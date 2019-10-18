@@ -102,7 +102,9 @@ def write_latex(biblist_entries: list,
     citations_data["subjects"] = citations_by_subjects
 
     # Create figures
+    # Plot citations by subgroups
     plot_citations_by_year(biblist_entries, "citations_by_year.png")
+    # Plot citations by subgroups
     
     # Read the html template file
     path_to_tpl, latex_tpl_filename = os.path.split(os.path.abspath(latex_tpl))
