@@ -1,0 +1,79 @@
+%*******************************************************************************
+% ethminutes-config.tex
+%
+% Use it at the beginning of your ethMinutes.tex, or as a LaTeX Preamble 
+% in your ethMinutes.{tex,lyx} with \input{ethminutes-config}
+% ******************************************************************************  
+
+%***********************
+% 0. General information
+%***********************
+\NeedsTeXFormat{LaTeX2e}[1999/01/01]
+\ProvidesPackage{ethminutes}[2013/21/01]
+
+%*******************************************************************************
+% 1. Set the encoding of your files.
+% UTF-8 is the only sensible encoding nowadays.
+% If you can't read äöüßáéçèê?åëæ?Ï?,
+% then change the encoding setting in your editor, not the line below.
+% Make sure your editor supports UTF-8
+%*******************************************************************************
+\PassOptionsToPackage{latin1}{inputenc}
+\usepackage{inputenc}
+\PassOptionsToPackage{T1}{fontenc} % T2A for cyrillics
+\usepackage{fontenc} 
+%\UseRawInputEncoding
+
+%******************************************
+% 2. Languages and other special characters
+%******************************************
+\usepackage[english]{babel}               % For adopting the typographical rules for French
+\usepackage{eurosym}
+
+%\usepackage{rawfonts}                    % 
+%\usepackage{charter}                     %
+%\usepackage[charter]{mathdesign}         %
+
+%******************************************
+% 3. Packages for color, image, and picture
+%******************************************
+\usepackage{xcolor}     % For color printing
+\usepackage{graphicx}   % For flexible insertion and greater control of graphics
+\usepackage{colortbl}	  % For putting color into table
+\usepackage{tikz}       %
+\usepackage{subfigure}  % For 
+\usepackage{rotate}     % For rotation 
+
+%***************
+% 3. Setup table
+%***************
+\usepackage{booktabs}
+\usepackage{tabularx}     
+\newcolumntype{Y}{>{\centering\arraybackslash}X}
+\newcommand{\lratio}[1]{\setlength{\hsize}{#1\hsize}}
+\usepackage{multirow}
+
+%****************
+% 4. Bibliography 
+%****************
+\usepackage{hyperref}   % Inline hyperlink
+%\usepackage{natbib}     % Bibliography using Author-year format
+\usepackage[backend=biber,bibencoding=utf8,style=numeric-comp,sorting=none,doi=false]{biblatex}
+\addbibresource{../bib/uqlab-citations.bib}
+\usepackage{bibentry}
+
+%******************
+% 5. Other packages
+%******************
+\usepackage{fancyhdr}
+\usepackage{ifthen}       % Add if/then/else command for LaTeX
+\usepackage{ulem}         % Flexible command for underline
+\normalem
+\usepackage{bstnotations} % Notations table from Phimeca
+
+%**********************
+% Load the minute style
+%**********************
+\usepackage{ethminutes} 
+
+\endinput

@@ -1,0 +1,112 @@
+%*******************************************************************************
+% ethminutes.sty
+%
+
+%**
+% Margin definition
+%
+\setlength{\headheight}{15mm}      % Hauteur de la zone de texte
+\setlength{\textheight}{230mm}          % Hauteur de la zone de texte
+\setlength{\textwidth}{160mm}            % Largeur de la zone de texte
+\setlength{\topmargin}{-15mm}             % Pas de marge en haut
+\setlength{\oddsidemargin}{0mm}          % Marge gauche sur pages impaires
+\headsep 8 pt
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{6pt plus 2pt minus 1 pt}
+
+% Definition de variables -------------------
+% RefDocument
+\gdef\@RefDocument{}
+\gdef\RefDocument#1{\gdef\@RefDocument{#1}}
+
+% Redacteur
+\gdef\@Redacteur{}
+\gdef\Redacteur#1{\gdef\@Redacteur{#1}}
+
+% Titre
+\gdef\@TitleReport{}
+\gdef\TitleReport#1{\gdef\@TitleReport{#1}}
+
+% Date
+\gdef\@Date{}
+\gdef\Date#1{\gdef\@Date{#1}}
+
+% LieuReunion
+\gdef\@LieuReunion{}
+\gdef\LieuReunion#1{\gdef\@LieuReunion{#1}}
+
+% Date diffusion
+\gdef\@DateDiffusion{}
+\gdef\DateDiffusion#1{\gdef\@DateDiffusion{#1}}
+
+% Destinataires
+\gdef\@Destinataires{}
+\gdef\Destinataires#1{\gdef\@Destinataires{#1}}
+
+% From
+\gdef\@From{}
+\gdef\From#1{\gdef\@From{#1}}
+
+% To
+\gdef\@To{}
+\gdef\To#1{\gdef\@To{#1}}
+
+% cc (carbon copy)
+\gdef\@CC{}
+\gdef\CC#1{\gdef\@CC{#1}}
+
+% Keywords
+\gdef\@Keywords{}
+\gdef\Keywords#1{\gdef\@Keywords{#1}}
+
+
+% Page Layout
+\makeatletter
+% En-tête
+\newcommand\Header{
+  \lhead{\includegraphics[height=8mm]{Logo-ETH.jpg}}
+  \chead{}
+  \rhead{\@RefDocument}	
+}
+
+% Footer
+\newcommand\Footer{
+  \lfoot{\@Date}
+  \cfoot{}
+  \rfoot{-- \thepage~/~\pageref{end} -- }
+  \pagestyle{fancyplain}
+}
+
+\renewcommand{\familydefault}{\sfdefault}
+
+% Front page
+\newcommand\FrontPage
+{
+  \begin{tabularx}{\textwidth}{>{\lratio{0.5}\raggedright\arraybackslash}Y
+      >{\lratio{0.5}\raggedleft\arraybackslash}Y}
+    %  
+    \includegraphics[height=10mm]{Logo-ETH.jpg} &
+    \begin{minipage}[c]{0.49\linewidth} \small 
+      ETH Zürich \\
+      Institute of Structural Engineering (IBK)\\
+      Chair of Risk, Safety \& Uncertainty Quantification \\
+      Wolfgang-Pauli-Str. 15 -- CH-8093 Zürich\\
+      Tel.: +41 44 633 66 69 -- Fax: +41 44 633 14 22 
+    \end{minipage}  
+  \end{tabularx}
+  
+  \begin{table}[!ht]
+    \centering
+    \begin{tabularx}{\textwidth}{>{\lratio{0.25}\raggedleft\arraybackslash}r >{\lratio{0.25}\raggedright\arraybackslash}Y >{\lratio{0.25}\raggedleft\arraybackslash}Y >{\lratio{0.25}\raggedright\arraybackslash}Y}\toprule 
+      {\bf Subject:} & \multicolumn{3}{l}{\multirow{1}{*}{\parbox{\textwidth}{\@TitleReport}}} \\
+ %                    & \multicolumn{3}{l}{} \\
+      {\bf Date:}    & \multicolumn{3}{l}{\@DateDiffusion} \\[1em]\midrule
+      {\bf From:}    & \@From & {\bf To:}   & \@To \\
+                     &        & {\bf cc:}   & \@CC \\\bottomrule
+    \end{tabularx}
+  \end{table}
+
+  \thispagestyle{empty}
+}
+
+\makeatother
