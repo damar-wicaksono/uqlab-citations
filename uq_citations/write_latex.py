@@ -3,6 +3,8 @@
 """
 import os
 import yaml
+import pandas as pd
+import matplotlib.pyplot as plt
 from jinja2 import Environment, FileSystemLoader
 
 __author__ = "Damar Wicaksono"
@@ -23,6 +25,24 @@ def create_latex_per_subject(biblist_entries, html_list, subject):
 def get_total_number(biblist_entries: list):
     """Get the total number of citations."""
     return len(biblist_entries)
+
+
+def get_citation_by_subgroup(biblist_entries: list, subject: dict):
+    """Create a subject dictionary"""
+    
+    if 'members' in subject.keys():
+        subgroups = subject['members']
+    else:
+        subgroups = [subject['name']]
+
+    citations_by_subgroup = {k: [] for k in subject["members"]}
+
+    for biblist_entry in biblist_entries:
+        for subgroup in subgroups:
+            if subgroup in biblist_entry["keywords"]:
+                citations_by_subgroup[subgroup].append(biblist_entry["ID"])
+                
+    return citations_by_subgroup
 
 
 def get_citation_by_subject(biblist_entries: list, subject: dict):
@@ -71,16 +91,16 @@ def get_citations_by_year(biblist_entries: list):
 
 def plot_citations_by_year(biblist_entries, output_filename):
     """Create a bar plot of citations by year."""
-    import matplotlib.pyplot as plt
     
     citations_by_year = get_citations_by_year(biblist_entries)
     year = list(citations_by_year.keys())
     year.reverse()
     citations = list(citations_by_year.values())
     citations.reverse()
+    plt.figure()
     plt.bar(year, citations, color="black")
     plt.savefig(output_filename,dpi=600)
-    
+    plt.close()
 
 def write_latex(biblist_entries: list,
                 subjects: list,
@@ -100,6 +120,17 @@ def write_latex(biblist_entries: list,
     citations_data["total"] = get_total_number(biblist_entries)
     citations_by_subjects = list(map(lambda subject: get_citation_by_subject(biblist_entries, subject), subjects))
     citations_data["subjects"] = citations_by_subjects
+
+    #
+    citations_by_subgroup = get_citation_by_subgroup(biblist_entries, subjects[2])
+    num_citations_by_subgroup = {'subject': [u for u in citations_by_subgroup.keys()],
+         'num_citations': [len(v) for v in citations_by_subgroup.values()]} 
+    df = pd.DataFrame(data=num_citations_by_subgroup)
+    ax = df.sort_values('num_citations', ascending=True).plot.barh(x = 'subject', y = 'num_citations', color="black", legend=False)
+    fig = ax.get_figure()
+    plt.yticks(rotation=45,fontsize=6)
+    fig.savefig("citations_by_subgroup.png",dpi=600)
+
 
     # Create figures
     # Plot citations by subgroups
