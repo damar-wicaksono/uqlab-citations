@@ -11,5 +11,6 @@ setup(
     entry_points="""
         [console_scripts]
         uq_citations_bibtex2html=uq_citations.cli:bibtex2html
+        uq_citations_bibtex2tex=uq_citations.cli:bibtex2tex
     """
 )
