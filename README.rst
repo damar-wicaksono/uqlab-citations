@@ -102,8 +102,8 @@ The file ``uqlab-citations.bib`` inside the folder ``./bib`` contains the latest
 The ``keywords`` field of each BibTeX entry, with the exception of the *Computational Science and Engineering**,
 must contain **at most 1** of the subject listed in the *Subject* column above.
 
-Due to limited citations, the subject *Material science and engineering* should be assigned *Mechanical engineering* as its subject.
-
+Due to the currently limited number of citations,
+the subject *Material science and engineering* should be assigned *Mechanical engineering* as its subject.
 
 .. _UQLab: http://www.uqlab.com/
 .. _`publications page`: https://uqlab.com/publications
