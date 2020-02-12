@@ -1781,4 +1781,72 @@ rithm, namely Gaussian process regression, is used to approximate the high‐dim
   url       = {https://books.google.ch/books?hl=en&lr=&id=nSysDwAAQBAJ&oi=fnd&pg=PA80&ots=a8ZaFbplk-&sig=1311sI2ka_xJ01LkqW1J1L3WVF8&redir_esc=y#v=onepage&q&f=false},
 }
 
+@Article{Wang2020,
+  author   = {Zeyu Wang and Abdollah Shafieezadeh,},
+  title    = {Real-time high-fidelity reliability updating with equality information using adaptive {Kriging}},
+  journal  = {Reliability Engineering \& System Safety},
+  year     = {2020},
+  volume   = {195},
+  pages    = {106735},
+  abstract = {Current state-of-the-art methods for reliability updating with equality information transform this challenging problem into an inequality one by introducing an auxiliary random variable. However, the joint event of information and failure in the derived conditional probabilities is typically very rare, and therefore, very challenging to estimate. Moreover, updating the reliability as new information arrives requires reevaluation of the probability of the joint event, which involves large numbers of calls to performance functions. We address these limitations by proposing a new approach to reliability updating called RUAK. One of the important contributions is the decomposition of the rare joint event of the failure and observed information into two events both with relatively high probabilities. Moreover, an adaptive Kriging-based reliability analysis method is proposed for the estimation of the prior failure probability and the conditional probability of information. This way, reliability updating for new information is conducted using the efficient Kriging meta-model, which significantly enhances the computational efficiency. Results for four examples indicate that the computational demand using RUAK is decreased by two orders of magnitude compared to the state-of-the-art methods, while achieving higher accuracy. This approach facilitates real-time reliability updating for various applications such as health monitoring and warning systems.},
+  doi      = {10.1016/j.ress.2019.106735},
+  file     = {:wang2020real - Real-time high-fidelity reliability updating with equality information using adaptive Kriging.pdf:PDF},
+  review   = {Used UQLab for reliability analysis on an improved algorithm.},
+  url      = {https://doi.org/10.1016/j.ress.2019.106735},
+}
+
+@Article{Lu2020,
+  author   = {Zhuoxin Lu and Xiaoyuan Xu and Zheng Yan, and Han Wang},
+  title    = {Density-Based Global Sensitivity Analysis of Islanded Microgrid Loadability Considering Distributed Energy Resource Integration},
+  journal  = {Journal of Modern Power Systems and Clean Energy},
+  year     = {2020},
+  volume   = {8},
+  number   = {1},
+  pages    = {94--101},
+  abstract = {With the proliferation of renewable energy and electric vehicles (EVs), there have been increasing uncertainties in power systems. Identifying the influencing random variables will reduce the effort in uncertainty modeling and improve the controllability of power systems. In this paper, a density-based global sensitivity analysis (GSA) method is proposed to evaluate the influence of uncertainties on islanded microgrids (IMGs). Firstly, the maximum IMG loadability evaluation model is established to assess the distance from the current operation point to the critical operation point. Secondly, the Borgonovo method, which is a density-based GSA method, is used to evaluate the influence of input variables on IMG loadability. Thirdly, to improve GSA efficiency, a modified Kriging model is used to obtain a surrogate model of IMG loadability, and Borgonovo indices are calculated based on the surrogate model. Finally, the proposed method is tested on a 38-bus IMG system. Simulation results are compared with those considering other methods to validate the effectiveness of the proposed method. Energy storage systems are considered to diminish the influence of critical uncertainties on IMG operation.},
+  doi      = {10.35833/MPCE.2018.000580},
+  file     = {:Lu2020 - Density-Based Global Sensitivity Analysis of Islanded Microgrid Loadability Considering Distributed Energy Resource Integration.pdf:PDF},
+  review   = {Use PC-Kriging module of UQLab to construct a metamodel.},
+  url      = {https://doi.org/10.35833/MPCE.2018.000580},
+}
+
+@Article{Schneider2019,
+  author   = {Aurel Schneider and Nicola Stoira and Alexandre Refregier and Andreas J Weiss and Mischa Knabenhans and Joachim Stadel and Romain Teyssier},
+  title    = {Baryonic effects for weak lensing: {I.} Power spectrum and covariance matrix},
+  journal  = {arXiv},
+  year     = {2019},
+  abstract = {Baryonic feedback effects lead to a suppression of the weak-lensing angular power spectrum on small scales. The poorly constrained shape and amplitude of this suppression is an important source of uncertainties for upcoming cosmological weak-lensing surveys such as Euclid or LSST. In this first paper in a series of two, we use simulations to build a Euclid-like tomographic mock data-set for the cosmic shear power spectrum and the corresponding covariance matrix, which are both corrected for baryons following the baryonification method of Schneider et al. (2019). In addition, we develop an emulator to obtain fast predictions of the baryonic suppression effects, allowing us to perform a likelihood inference analysis for a standard ΛCDM cosmology with both cosmological and astrophysical parameters. Our main findings are the following: (i) ignoring baryonic effects leads to a greater than 5σ bias on the cosmological parameters Ωm and σ8; (ii) restricting the analysis to the largest scales, that are mostly unaffected by baryons, makes the bias disappear, but results in a blow-up of the Ωm-σ8 contour area by more than a factor of 10; (iii) ignoring baryonic effects on the covariance matrix does not significantly affect cosmological parameter estimates; (iv) while the baryonic suppression is mildly cosmology dependent, this effect does not noticeably modify the posterior contours. Overall, we conclude that including baryonic uncertainties in terms of nuisance parameters allows us to obtain unbiased and surprisingly tight constraints on cosmological parameters.},
+  file     = {:Schneider2019 - Baryonic effects for weak lensing_ I. Power spectrum and covariance matrix.pdf:PDF},
+  review   = {Used PCE module of UQLab to construct a metamodel.},
+  url      = {https://arxiv.org/abs/1910.11357},
+}
+
+@InProceedings{Phan2019,
+  author       = {Hoang Nam Phan and Fabrizio Paolacci and Daniele Corritore and Nicola Tondini and Oreste S Bursi},
+  title        = {A {Kriging}-Based Surrogate Model for Seismic Fragility Analysis of Unanchored Storage Tanks},
+  booktitle    = {ASME 2019 Pressure Vessels \& Piping Conference},
+  year         = {2019},
+  address      = {San Antonio, Texas},
+  organization = {American Society of Mechanical Engineers Digital Collection},
+  abstract     = {The  seismic  vulnerability  of  aboveground  steel  storage tanks  has  been  dramatically  proved  during  the  latest  seismic events,  which  demonstrates  the  need  for  reliable  numerical models   for   vulnerability   and   risk   assessments   of   storage facilities.  While  for  anchored  aboveground  tanks,  simplified models are nowadays available and mostly used for the seismic vulnerability  assessment,  in  the  case  of  unanchored  tanks,  the scientific  community  is  still  working  on  numerical  models capable of reliably predicting  the nonlinearity due to uplift and sliding mechanisms. In this paper, a surrogate model based on a Kriging approach is proposed for a case study of an unanchored tank,  whose  calibration  is  performed  on a  three-dimensional finite   element   (3D   FE)   model   using   a   reliable   design   of experiments  (DOE)  method.  The  verification  of  the  3D  FE model  is  also  done  through  a  shaking  table  campaign.  The outcomes show the effectiveness of the proposed model to build fragility curves at a low computational cost of the critical damage state of the tank, i.e., the plastic rotation of the shell-to-bottom joint.},
+  doi          = {10.1115/PVP2019-93259},
+  eventdate    = {2019-07-14/2019-07-19},
+  file         = {:Phan2019 - A Kriging-Based Surrogate Model for Seismic Fragility Analysis of Unanchored Storage Tanks.pdf:PDF},
+  review       = {Used Kriging module of UQLab to construct a metamodel.},
+  url          = {https://doi.org/10.1115/PVP2019-93259},
+}
+
+@Article{Pan2020,
+  author   = {Zhongmei Pan and Jian Liu and Huanhuan Fu and Tao Ding and Yan Xud and XiangqianTong},
+  title    = {Probabilistic voltage quality evaluation of islanded droop-regulated microgrid based on non-intrusive low rank approximation method},
+  journal  = {International Journal of Electrical Power \& Energy Systems},
+  year     = {2020},
+  volume   = {117},
+  abstract = {Islanded microgrids (IMGs) are more vulnerable to voltage quality issues caused by the integration stochastic characteristics of intermittent distributed generations (DGs) owing to the small scale. Meanwhile, traditional load flow model is not suitable for decentralized droop-regulated IMGs considering their specific features, i.e. the absence of slack bus and variation of frequency. Therefore, a probabilistic voltage profile evaluation method for decentralized droop-regulated IMGs based on the canonical LRA method is proposed in this paper. Firstly, the deterministic load flow models of both balanced and unbalanced droop-regulated IMG are built and Newton-Raphson method is applied for solutions taking angular frequency as an unknown. Then, step size optimization is employed to improve the convergence performance of Newton-Raphson method, especially for load flow of the unbalanced IMGs. Finally, to evaluate the impact of uncertainties of the intermittent DGs and loads on voltage profiles in droop-regulated IMGs, probabilistic load flow calculations based on a non-intrusive low-rank approximation (LRA) method are performed. The response of voltage profile is represented statistically-equivalently by a sum of rank-one functions based on a small number of deterministic load flow calculations, The probabilistic characteristics of voltage quality metrics including mean value, standard deviation, limit violation probability, PDFs and CDFs of node voltage as well as three-phase voltage unbalance factor (VUF) can be evaluated analytically and accurately without evaluating a large number of samples. Test results on balanced and unbalanced IMGs demonstrate the effectiveness and accuracy of the proposed method.},
+  doi      = {10.1016/j.ijepes.2019.105630},
+  file     = {:Pan2020 - Probabilistic voltage quality evaluation of islanded droop-regulated microgrid based on non-intrusive low rank approximation method.pdf:PDF},
+  review   = {Used LRA module of UQLab to construct a metamodel.},
+  url      = {https://doi.org/10.1016/j.ijepes.2019.105630},
+}
+
 @Comment{jabref-meta: databaseType:bibtex;}
