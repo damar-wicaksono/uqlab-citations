@@ -10,9 +10,9 @@
             {% endif %}
             
             {% if "pages" not in bib_entry %}
-                <span class="bib_dates">{{ bib_entry.dates }}.</span>
+                <span class="bib_dates">{{ bib_entry.eventdate }}.</span>
             {% else %}
-                <span class="bib_dates">{{ bib_entry.dates }},</span>
+                <span class="bib_dates">{{ bib_entry.eventdate }},</span>
                 <span class="bib_pages">pp. {{ bib_entry.pages }}.</span>
             {% endif %}
         {% elif "school" in bib_entry %}
